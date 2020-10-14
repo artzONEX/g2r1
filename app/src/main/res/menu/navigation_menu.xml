@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <item android:title="">
+        <menu>
+            <item android:id="@+id/navigation_home"
+                android:icon="@drawable/casa"
+                android:title="@string/home" />
+            <item android:id="@+id/navigation_informacion"
+                android:title="@string/informacion"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:icon="@drawable/informacion"/>
+        </menu>
+    </item>
+
+    <item android:title="Sector">
+        <menu>
+            <item android:id="@+id/navigation_carpinteria"
+                android:title="@string/carpinteria"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:icon="@drawable/sierra"
+                />
+            <item android:id="@+id/navigation_fontaneria"
+                android:title="@string/fontaneria"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:icon="@drawable/llave"/>
+            <item android:id="@+id/navigation_electricista"
+                android:title="@string/electricista"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:icon="@drawable/alicates"/>
+            <item android:id="@+id/navigation_pintura"
+                android:title="@string/pintura"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:icon="@drawable/brocha"/>
+            <item android:id="@+id/navigation_otros"
+
+                android:title="@string/otros"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="bold"
+                android:icon="@drawable/destornillador"/>
+        </menu>
+    </item>
+        <item android:title="Contacto"         >
+            <menu >
+                <item
+                    android:id=" @+id/navigation_email"
+                    android:fontFamily="sans-serif-medium"
+                    android:title="@string/email"
+                    android:iconTint="@color/colorPrimaryDark"
+                    android:enabled="false"
+                    />
+                <item android:id="@+id/navigation_telefono"
+                    android:title="@string/numero"
+                    android:fontFamily="sans-serif-medium"
+                    android:enabled="false"
+                    />
+            </menu>
+
+        </item>
+
+</menu>
+
+

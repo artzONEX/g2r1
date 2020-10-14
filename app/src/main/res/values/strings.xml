@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name" >Botchapp</string>
+    <string name="informacion">Informacion</string>
+    <string name="carpinteria">Carpinteria</string>
+    <string name="fontaneria">Fontaneria</string>
+    <string name="electricista">Electricista</string>
+    <string name="pintura">Pintura</string>
+    <string name="otros">Otros</string>
+
+    <string name="openNavDrawer">Navigation Drawer Open</string>
+    <string name="closeNavDrawer">Navigation Drawer Close</string>
+    <string name="numero">689345621</string>
+    <string name="email">txapuzalia@gmail.com</string>
+    <string name="home">Home</string>
+    <string name="contacto"></string>
+</resources>
