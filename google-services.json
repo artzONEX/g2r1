@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "271956314492",
+    "firebase_url": "https://txapuzalia-database.firebaseio.com",
+    "project_id": "txapuzalia-database",
+    "storage_bucket": "txapuzalia-database.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271956314492:android:b1c1829a57b1d109183cf9",
+        "android_client_info": {
+          "package_name": "com.txapuzalia.botchapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271956314492-3sqdvacmjabosqcjbltarp1urkee6f25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3mJM9SYNSXGRJLtCn7pQ07ek2PHg_HZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271956314492-3sqdvacmjabosqcjbltarp1urkee6f25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
