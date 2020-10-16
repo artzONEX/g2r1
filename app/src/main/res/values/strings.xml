@@ -22,4 +22,41 @@
     <string name="note">Nota...</string>
     <string name="iniciar">Iniciar</string>
     <string name="desliza">Desliza</string>
+    <string name="botonCarp1">Reforma general</string>
+    <string name="botonCarp2">Mantenimiento y reparacion de muebles</string>
+    <string name="botonCarp3">Puertas exteriores e interiore</string>
+    <string name="botonCarp4">Suelos</string>
+    <string name="botonCarp5">Arreglo de armarios empotrados</string>
+    <string name="botonCarp6">Montar y desmontar mobiliario varios</string>
+    <string name="botonCarp7">Lijado de mobiliario de madera</string>
+    <string name="botonCarp8">Otros (Escribir en formulario)</string>
+
+    <string name="botonElectr1">Instalacion porteros automaticos</string>
+    <string name="botonElectr2">Instalacion de calefacciones de bajo consumo</string>
+    <string name="botonElectr3">Instalaciones de antenas</string>
+    <string name="botonElectr4">Suelos</string>
+    <string name="botonElectr5">Sistema de ahorro energetico</string>
+    <string name="botonElectr6">Reubicacion electrica</string>
+    <string name="botonElectr7">Otros (Escribir en formulario)</string>
+
+    <string name="botonPint1">Interiores</string>
+    <string name="botonPint2">Empapelado</string>
+    <string name="botonPint3">Colocacion de vinilo</string>
+    <string name="botonPint4">Raseado de paredes</string>
+    <string name="botonPint5">Otros (Escribir en formulario)</string>
+
+    <string name="botonFont1">Arreglo de goteras</string>
+    <string name="botonFont2">Reparacion de tuberias</string>
+    <string name="botonFont3">Fugas de aguas</string>
+    <string name="botonFont4">Reparacion de sifones</string>
+    <string name="botonFont5">Otros (Escribir en formulario)</string>
+
+    <string name="botonOtros1">Programar TV</string>
+    <string name="botonOtros2">Colgar cuadros</string>
+    <string name="botonOtros3">Otros (Escribir en formulario)</string>
+
+
+
+    <string name="textoGeneralOpciones">Elige la tarea que necesite</string>
+
 </resources>
