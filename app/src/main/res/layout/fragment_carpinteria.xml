@@ -1,14 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
 
-    >
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/botonCarp1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/botonCarp2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/botonCarp3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/botonCarp4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.409"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="0.034" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/botonCarp5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.021" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="23dp"
+        android:text="@string/botonCarp6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/botonCarp7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6"
+        app:layout_constraintVertical_bias="0.178" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="carpinteria" />
-</RelativeLayout>
+        android:id="@+id/textView4"
+        android:layout_width="299dp"
+        android:layout_height="28dp"
+        android:text="@string/textoCarpinteria"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+</androidx.constraintlayout.widget.ConstraintLayout>

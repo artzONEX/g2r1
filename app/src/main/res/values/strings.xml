@@ -13,4 +13,14 @@
     <string name="email">txapuzalia@gmail.com</string>
     <string name="home">Home</string>
     <string name="contacto"></string>
+
+    <string name="botonCarp1">Reforma general</string>
+    <string name="botonCarp2">Mantenimiento y reparacion de muebles</string>
+    <string name="botonCarp3">Puertas exteriores e interiore</string>
+    <string name="botonCarp4">Suelos</string>
+    <string name="botonCarp5">Arreglo de armarios empotrados</string>
+    <string name="botonCarp6">Montar y desmontar mobiliario varios</string>
+    <string name="botonCarp7">Lijado de mobiliario de madera</string>
+    <string name="textoCarpinteria">Elige la tarea que necesite</string>
+
 </resources>
