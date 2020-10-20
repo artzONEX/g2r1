@@ -46,7 +46,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Reforma general"
+                                android:text="@string/botonCarp1"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="24dp" />
 
@@ -77,7 +77,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/electricista" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -153,7 +153,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Mantenimiento y Reparacion"
+                                android:text="@string/botonCarp2"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="24dp" />
 
@@ -184,7 +184,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/electricista" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -261,7 +261,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Puertas interiores y exteriores"
+                                android:text="@string/botonCarp3"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="24dp" />
 
@@ -292,7 +292,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/electricista" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -368,7 +368,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Suelos"
+                                android:text="@string/botonCarp4"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="24dp" />
 
@@ -399,7 +399,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/electricista" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -475,7 +475,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Arreglo de armarios empotrados"
+                                android:text="@string/botonCarp5"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="24dp" />
 
@@ -506,7 +506,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/electricista" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -582,7 +582,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Montar y desmontar mobiliario"
+                                android:text="@string/botonCarp6"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="20dp" />
 
@@ -613,7 +613,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/electricista" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -689,7 +689,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Lijado de mobiliario de madera"
+                                android:text="@string/botonCarp7"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="20dp" />
 
@@ -720,7 +720,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/electricista" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -796,7 +796,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="Otros"
+                                android:text="@string/otros"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="20dp" />
 
@@ -827,7 +827,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/electricista" />
                         </RelativeLayout>
 
                     </LinearLayout>
