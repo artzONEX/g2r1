@@ -149,7 +149,7 @@ public class formularioFragment extends Fragment {
         protected void onPreExecute(){
             progreso = new ProgressDialog(getActivity());
             progreso.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-            progreso.setMessage("Haciendo reserva.....");
+            progreso.setMessage("Tramitando solicitud. ESPERE...");
             progreso.setCancelable(false);
             progreso.setMax(100);
             progreso.setProgress(0);
@@ -158,6 +158,8 @@ public class formularioFragment extends Fragment {
 
         @Override
         protected Integer doInBackground (Integer... n){
+
+
             Map<String, Object> updateMap = new HashMap();
             updateMap.put("Apellido", editSurName.getText().toString());
             updateMap.put("Nombre", editName.getText().toString());
@@ -167,29 +169,33 @@ public class formularioFragment extends Fragment {
             updateMap.put("Nombre_Tarea", tvOpcion.getText().toString());
             updateMap.put("E-mail", editEmail.getText().toString());
 
-            SystemClock.sleep(1000);
-            publishProgress(50);
+
 
             String id = editDireccion.getText().toString() + " - " + tvOpcion.getText().toString();
 
+            int jumpTime = 0;
+            int totalProgressTime = 100;
+            while(jumpTime < totalProgressTime) {
 
+                jumpTime += 10;
+                progreso.setProgress(jumpTime);
+                SystemClock.sleep(300);
+            }
             db.collection("Tareas")
                     .document(id)
                     .set(updateMap);
-            FragmentManager fm = getFragmentManager();
+            //Crear bundle, que son los datos que pasaremos
+            Bundle datosAEnviar = new Bundle();
+            // Aquí pon todos los datos que quieras en formato clave, valor
+            datosAEnviar.putBoolean("tForm",true);
+            FragmentManager fm = getActivity().getSupportFragmentManager();
             assert fm != null;
             FragmentTransaction ft = fm.beginTransaction();
             homeFragment llf = new homeFragment();
+            llf.setArguments(datosAEnviar);
             ft.replace(R.id.fragment_container, llf);
-            SystemClock.sleep(1000);
-            publishProgress(75);
+            ft.addToBackStack(null);
             ft.commit();
-
-            SystemClock.sleep(1000);
-            publishProgress(100);
-            SystemClock.sleep(1000);
-
-
 
             return null;
         }

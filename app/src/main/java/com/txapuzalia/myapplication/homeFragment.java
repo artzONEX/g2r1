@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -34,6 +35,21 @@ public class homeFragment extends Fragment {
 
 
         });
+        Bundle datosRecuperados = getArguments();
+
+        if (datosRecuperados != null) {
+            // Y ahora puedes recuperar usando get en lugar de put
+
+            boolean toastFormulario = datosRecuperados.getBoolean("tForm");
+
+            if (toastFormulario){
+                Toast.makeText(getActivity(),"Su solicitud se ha almacenado correctamente",Toast.LENGTH_LONG).show();
+            }else{
+                Toast.makeText(getActivity(),"Ha habido un error con su solicitud. Vuelva a intentarlo mas tarde.",Toast.LENGTH_LONG).show();
+            }
+        }
+
+
         return view;
 
     }
