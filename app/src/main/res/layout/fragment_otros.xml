@@ -53,8 +53,7 @@
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="81dp"
-                                android:text="Contamos con la profesionalidad de más de 70 años de experiencia ¡Consúltanos! Los mejores materiales." />
-
+                                android:text="Le programamos la TV con todos los canales disponibles."/>
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -77,7 +76,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/otros1" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -161,7 +160,7 @@
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Lijar, barnizar, encerar… serán algunos de los trabajos, para recuperar la vida del mueble que tanto cariño le tiene." />
+                                android:text="Le colgamos todos los cuadros que necesite. " />
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
@@ -184,7 +183,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentRight="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/otros2" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -269,7 +268,7 @@
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas." />
+                                android:text="Comentar en el formulario." />
 
                             <LinearLayout
                                 android:layout_width="wrap_content"
