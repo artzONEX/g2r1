@@ -36,20 +36,23 @@
 
                         <LinearLayout
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:orientation="vertical">
+
                             <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
+                                android:layout_width="match_parent"
+                                android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr1"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="24dp" />
 
+
                             <TextView
                                 android:layout_width="199dp"
-                                android:layout_height="81dp"
-                                android:text="Instalamos su nuevo portero automático o lo actualizamos a videoportero. Realizamos reparaciones de la instalación existente sin importar marcas o modelos. Ofrecemos a nuestros clientes todas las posibilidades de reparación o cambio." />
+                                android:layout_height="match_parent"
+                                android:text="En Txapuzalia, nuestras actividades principales son la ejecución y mantenimiento de todo tipo de instalaciones de calefacción y agua caliente sanitaria, instalaciones colectivas e individuales de gas natural, gas propano y gasóleo; así como instalaciones de energías renovables como solar y climatización con bomba de calor." />
+
                             <LinearLayout
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -58,8 +61,66 @@
 
 
                             </LinearLayout>
+
+
                         </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginTop="-8dp"
+                                android:src="@drawable/electricidad1" />
+                        </RelativeLayout>
+
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:fontFamily="@font/roboto_regular"
+                                android:gravity="center"
+
+                                android:text="Seleccionar"
+                                android:textColor="#F06A90B5" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" />
+
+                    </LinearLayout>
+
+
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
