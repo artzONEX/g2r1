@@ -23,8 +23,8 @@
     <string name="iniciar">Iniciar</string>
     <string name="desliza">Desliza</string>
     <string name="botonCarp1">Reforma general</string>
-    <string name="botonCarp2">Mantenimiento y reparacion de muebles</string>
-    <string name="botonCarp3">Puertas exteriores e interiore</string>
+    <string name="botonCarp2">Mantenimiento de muebles</string>
+    <string name="botonCarp3">Puertas exteriores e interiores</string>
     <string name="botonCarp4">Suelos</string>
     <string name="botonCarp5">Arreglo de armarios empotrados</string>
     <string name="botonCarp6">Montar y desmontar mobiliario varios</string>
@@ -32,7 +32,7 @@
     <string name="botonCarp8">Otros</string>
 
     <string name="botonElectr1">Instalacion porteros automaticos</string>
-    <string name="botonElectr2">Instalacion de calefacciones de bajo consumo</string>
+    <string name="botonElectr2">Instalacion de calefacciones</string>
     <string name="botonElectr3">Instalaciones de antenas</string>
     <string name="botonElectr4">Suelos</string>
     <string name="botonElectr5">Sistema de ahorro energetico</string>
