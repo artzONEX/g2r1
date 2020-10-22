@@ -53,7 +53,7 @@ public class formularioFragment extends Fragment {
         editPhone = v.findViewById(R.id.editPhone);
         etComments = v.findViewById(R.id.etComments);
 
-        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE NOMBRE HA ESCRITO --
+        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE NOMBRE HA ESCRITO ALGO --
         editName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @SuppressLint("RtlHardcoded")
             @Override
@@ -64,7 +64,7 @@ public class formularioFragment extends Fragment {
                 }
             }
         });
-        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE APELLIDO HA ESCRITO --
+        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE APELLIDO HA ESCRITO ALGO --
         editSurName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -73,7 +73,7 @@ public class formularioFragment extends Fragment {
                 }
             }
         });
-        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE DIRECCIÓN HA ESCRITO --
+        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE DIRECCIÓN HA ESCRITO ALGO --
         editDireccion.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -82,7 +82,7 @@ public class formularioFragment extends Fragment {
                 }
             }
         });
-        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE EMAIL HA ESCRITO --
+        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE EMAIL HA ESCRITO ALGO --
         editEmail.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -91,7 +91,7 @@ public class formularioFragment extends Fragment {
                 }
             }
         });
-        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE TELEFONO HA ESCRITO --
+        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE TELEFONO HA ESCRITO ALGO --
         editPhone.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -104,6 +104,7 @@ public class formularioFragment extends Fragment {
         btnenviar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                // -- AL CLICKAR EL BOTÓN DE ENVIAR, REVISARÁ QUE TODOS LOS CAMPOS CUMPLAN CON SUS RESPECTIVOS REQUISITOS --
                 if (editName.getText().toString().isEmpty() || editSurName.getText().toString().isEmpty() ||
                         editDireccion.getText().toString().isEmpty() || editEmail.getText().toString().isEmpty() ||
                         editPhone.getText().toString().isEmpty()) {
@@ -129,6 +130,7 @@ public class formularioFragment extends Fragment {
     private boolean comprobarDatos() {
 
         String emailInput = editEmail.getText().toString().trim();
+        // -- COMPRUEBA QUE LOS CAMPOS DEL MÓVIL Y DEL EMAIL ESTÉN BIEN ESCRITOS (que tenga un "@", que termine en ".com" que sea todos números, nueve dígitos
         if (!Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
             Toast.makeText(getActivity().getApplicationContext(), "El correo electrónico es incorrecto.", Toast.LENGTH_SHORT).show();
             return false;
@@ -148,6 +150,7 @@ public class formularioFragment extends Fragment {
 
         @Override
         protected void onPreExecute(){
+            // -- BARRA DE PROGRESO --
             progreso = new ProgressDialog(getActivity());
             progreso.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
             progreso.setMessage("Tramitando solicitud. ESPERE...");
@@ -160,7 +163,7 @@ public class formularioFragment extends Fragment {
         @Override
         protected Integer doInBackground (Integer... n){
 
-
+            // -- CREA UN OBJETO PARA GUARDAR TODOS LOS DATOS --
             Map<String, Object> updateMap = new HashMap();
             updateMap.put("Apellido", editSurName.getText().toString());
             updateMap.put("Nombre", editName.getText().toString());
@@ -171,7 +174,7 @@ public class formularioFragment extends Fragment {
             updateMap.put("E-mail", editEmail.getText().toString());
 
 
-
+            // -- ESTE SERÁ EL ID QUE MANDAREMOS A LA BASE DE DATOS PARA DIFERENCIAR UN OBJETO DE OTRO --
             String id = editDireccion.getText().toString() + " - " + tvOpcion.getText().toString();
 
             int jumpTime = 0;
@@ -185,9 +188,11 @@ public class formularioFragment extends Fragment {
             db.collection("Tareas")
                     .document(id)
                     .set(updateMap);
-            //Crear bundle, que son los datos que pasaremos
+            // -- CREAR BUNDLE, QUE SON LOS DATOS QUE PASAREMOS --
             Bundle datosAEnviar = new Bundle();
-            // Aquí pon todos los datos que quieras en formato clave, valor
+
+
+            // -- AQUÍ PON TOSDOS LOS DATOS QUE QUIERAS EN FORMATO CLAVE, VALOR --
             datosAEnviar.putBoolean("tForm",true);
             FragmentManager fm = getActivity().getSupportFragmentManager();
             assert fm != null;
