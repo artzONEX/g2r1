@@ -1,7 +1,6 @@
 package com.txapuzalia.myapplication;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -31,7 +30,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.bumptech.glide.Glide;
 import com.google.android.material.navigation.NavigationView;
+import com.squareup.picasso.Picasso;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -53,7 +54,6 @@ public class homeFragment extends Fragment {
     private Toolbar toolbar;
     private DrawerLayout dl;
     private NavigationView nv;
-    public Activity MainActivity;
 
 
     @SuppressLint("CutPasteId")
@@ -83,102 +83,35 @@ public class homeFragment extends Fragment {
 
 
          */
-        nv.setItemIconTintList(null);
-        ActionBarDrawerToggle actionBarDrawerToggle= new ActionBarDrawerToggle(
-                MainActivity,
-                dl,
-                toolbar,
-                R.string.openNavDrawer,
-                R.string.closeNavDrawer
-        );
-
-        dl.addDrawerListener(actionBarDrawerToggle);
-        actionBarDrawerToggle.syncState();
 
 
+
+        //String EDteamImage = "https://ed.team/sites/default/files/styles/16_9_medium/public/2018-04/guia-de-estilos.jpg?itok=73JysFzx";
+        //Glide.with(getApplicationContext()).load(EDteamImage).into(flecha);
+
+
+        Picasso.get()
+                .load( "https://archive.org/details/flecha_20201022/flecha.jpg")
+                /*.placeholder(R.drawable.flecha)
+                .error(R.drawable.flecha)*/
+                ;
 
         //Añadimos el video
 
-        /*PRUEBA 4
-        MediaController mc= new MediaController(getContext());
-
-        String path = "android.resource://";
-        VideoHome.setVideoURI(Uri.parse(path));
-        VideoHome.setMediaController(mc);
-        VideoHome.start();
-
-
-       /
-      //PRUEBA 3
-      /*
-
-
-
-        VideoHome.requestFocus();
-
-
-       String videopath = "https://archive.org/details/video3_202010";
-
-       VideoHome.setVideoURI(Uri.parse(videopath));
-
-       VideoHome.setMediaController(new MediaController(getActivity())); //error in (this)[enter image description here][1]
-
-       VideoHome.requestFocus();
-       VideoHome.start();*
-        */
-
-        //PRUEBA 2
-
+        //Si el vídeo está en local
         //String videoPath = "android.resource://" + getActivity().getPackageName() + "/" + R.drawable.video;
+
         //Si el vídeo está detrás de una URL
         String videoPath = "https://archive.org/download/video3_202010/video3.mp4";
         Uri videoUri = Uri.parse(videoPath);
         VideoHome.setVideoURI(videoUri);
 
-
+        //AÑADIMOS LOS CONTROLES DE REPRODUCIR VIDEO
         MediaController mediaController = new MediaController(getContext());
         mediaController.setAnchorView(VideoHome);
         VideoHome.setMediaController(mediaController);
 
-
-        /*android.widget.MediaController mediaController = null;
-        VideoHome.setMediaController(new MediaController(this));
-        VideoHome.setMediaController(mediaController);
-        mediaController.setAnchorView(VideoHome);
-
-
-
-        /*
-        VideoHome.setMediaController(new MediaController(getActivity()));
-
-
-        MediaController mediaController = new MediaController(getActivity());
-        VideoHome.setMediaController(mediaController);
-        mediaController.setAnchorView(VideoHome);
-
-
-
-        VideoHome.requestFocus();
-
-
-
-        /*VideoHome.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
-            @Override
-            public void onPrepared(MediaPlayer mp) {
-                Log.d("VideoHome", "ready to play");
-                //Si queremos auto-start
-                VideoHome.start();
-            }
-        });*/
-
-        /* PRUEBA !
-        String videoPath = "android.resource://" + getActivity().getPackageName() + "/" + R.drawable.video;
-        Uri uri = Uri.parse(videoPath);
-        VideoHome.setVideoURI(uri);
-        /*MediaController mediaController = new MediaController(getActivity());
-        VideoHome.setMediaController(mediaController);
-        mediaController.setAnchorView(VideoHome);*/
-
+        //INICIAMOS EL VIDEO AUTOMATICAMENTE
         VideoHome.start();
 
 
@@ -239,6 +172,7 @@ public class homeFragment extends Fragment {
 
         btn=view.findViewById(R.id.btnIniciar);
         btn.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 /*FragmentManager fm = getFragmentManager();
@@ -267,7 +201,19 @@ public class homeFragment extends Fragment {
 
                 //dl.openDrawer(dl);
 
-                dl.openDrawer(GravityCompat.START);
+                //dl.openDrawer(GravityCompat.START);
+
+                //dl.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN);
+
+                //dl.openDrawer(Your View, Usually a ListView);
+
+                //dl.openDrawer(nv);
+
+                //dl.openDrawer(Gravity.START);
+
+                ((MainActivity) getActivity()).openDrawer();
+
+
 
 
             }

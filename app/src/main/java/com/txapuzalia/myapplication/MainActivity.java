@@ -9,6 +9,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
@@ -91,5 +92,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 
+    }
+
+    public void openDrawer() {
+        //dl.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED);
     }
 }

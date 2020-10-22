@@ -61,5 +61,6 @@
 
     <string name="descripcion2">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
 
+    <string name="image_from_url">Imagen flecha desliza</string>
 
 </resources>
