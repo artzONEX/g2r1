@@ -23,7 +23,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:id="@+id/carp1">
 
 
                 <LinearLayout
@@ -48,7 +49,8 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp1"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24dp"
+                                android:id="@+id/carp1Text"/>
 
                             <TextView
                                 android:layout_width="199dp"
@@ -137,7 +139,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    android:id="@+id/carp2">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -155,7 +158,8 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp2"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24dp"
+                                android:id="@+id/carp2Text"/>
 
 
                             <TextView
@@ -245,7 +249,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    android:id="@+id/carp3">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -263,7 +268,8 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp3"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24dp"
+                                android:id="@+id/carp3Text"/>
 
 
                             <TextView
@@ -352,7 +358,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    android:id="@+id/carp4">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -370,7 +377,8 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp4"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24dp"
+                                android:id="@+id/carp4Text"/>
 
 
                             <TextView
@@ -459,7 +467,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    android:id="@+id/carp5">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -477,7 +486,8 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp5"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24dp"
+                                android:id="@+id/carp5Text"/>
 
 
                             <TextView
@@ -566,7 +576,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    android:id="@+id/carp6">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -584,7 +595,8 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp6"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="20dp" />
+                                android:textSize="20dp"
+                                android:id="@+id/carp6Text"/>
 
 
                             <TextView
@@ -673,7 +685,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    android:id="@+id/carp7">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -691,7 +704,8 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp7"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="20dp" />
+                                android:textSize="20dp"
+                                android:id="@+id/carp7Text"/>
 
 
                             <TextView
@@ -774,7 +788,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:id="@+id/carp8">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -798,7 +813,8 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/otros"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="20dp" />
+                                android:textSize="20dp"
+                                android:id="@+id/carp8Text"/>
 
 
                             <TextView

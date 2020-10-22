@@ -135,7 +135,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:id="@+id/otros2"
                 android:onClick="Botones">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -160,7 +161,8 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonOtros2"
                                 android:textColor="@color/LetraOtros"
-                                android:textSize="24dp" />
+                                android:textSize="24dp"
+                                android:id="@+id/otros2Text"/>
 
                             <TextView
                                 android:layout_width="199dp"
@@ -243,7 +245,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:id="@+id/otros3"
                 android:onClick="Botones">
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -267,7 +270,8 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonOtros3"
                                 android:textColor="@color/LetraOtros"
-                                android:textSize="24dp" />
+                                android:textSize="24dp"
+                                android:id="@+id/otros3Text"/>
 
 
                             <TextView
