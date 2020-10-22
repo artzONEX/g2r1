@@ -116,114 +116,142 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 TextView otros1= findViewById(R.id.otros1Text);
                 bundle.putString("opcion", otros1.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.otros2:
                 TextView otros2= findViewById(R.id.otros2Text);
                 bundle.putString("opcion", otros2.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.otros3:
                 TextView otros3= findViewById(R.id.otros3Text);
                 bundle.putString("opcion", otros3.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.carp1:
                 TextView carp1= findViewById(R.id.carp1Text);
                 bundle.putString("opcion", carp1.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.carp2:
                 TextView carp2= findViewById(R.id.carp2Text);
                 bundle.putString("opcion", carp2.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.carp3:
                 TextView carp3= findViewById(R.id.carp3Text);
                 bundle.putString("opcion", carp3.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.carp4:
                 TextView carp4= findViewById(R.id.carp4Text);
                 bundle.putString("opcion", carp4.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.carp5:
                 TextView carp5= findViewById(R.id.carp5Text);
                 bundle.putString("opcion", carp5.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.carp6:
                 TextView carp6= findViewById(R.id.carp6Text);
                 bundle.putString("opcion", carp6.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.carp7:
                 TextView carp7= findViewById(R.id.carp7Text);
                 bundle.putString("opcion", carp7.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.carp8:
                 TextView carp8= findViewById(R.id.carp8Text);
                 bundle.putString("opcion", carp8.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.elec1:
                 TextView elec1= findViewById(R.id.elec1Text);
                 bundle.putString("opcion", elec1.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.elec2:
                 TextView elec2= findViewById(R.id.elec2Text);
                 bundle.putString("opcion", elec2.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.elec3:
                 TextView elec3= findViewById(R.id.elec3Text);
                 bundle.putString("opcion", elec3.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.elec4:
                 TextView elec4= findViewById(R.id.elec4Text);
                 bundle.putString("opcion", elec4.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.elec5:
                 TextView elec5= findViewById(R.id.elec5Text);
                 bundle.putString("opcion", elec5.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.elec6:
                 TextView elec6= findViewById(R.id.elec6Text);
                 bundle.putString("opcion", elec6.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.elec7:
                 TextView elec7= findViewById(R.id.elec7Text);
                 bundle.putString("opcion", elec7.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.pint1:
                 TextView pint1= findViewById(R.id.pint1Text);
                 bundle.putString("opcion", pint1.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.pint2:
                 TextView pint2= findViewById(R.id.pint2Text);
                 bundle.putString("opcion", pint2.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.pint3:
                 TextView pint3= findViewById(R.id.pint3Text);
                 bundle.putString("opcion", pint3.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.pint4:
                 TextView pint4= findViewById(R.id.pint4Text);
                 bundle.putString("opcion", pint4.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.pint5:
                 TextView pint5= findViewById(R.id.pint5Text);
                 bundle.putString("opcion", pint5.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.font1:
                 TextView font1= findViewById(R.id.font1Text);
                 bundle.putString("opcion", font1.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.font2:
                 TextView font2= findViewById(R.id.font2Text);
                 bundle.putString("opcion", font2.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.font3:
                 TextView font3= findViewById(R.id.font3Text);
                 bundle.putString("opcion", font3.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.font4:
                 TextView font4= findViewById(R.id.font4Text);
                 bundle.putString("opcion", font4.getText().toString() );
                 cf.setArguments(bundle);
+                break;
             case R.id.font5:
                 TextView font5= findViewById(R.id.font5Text);
                 bundle.putString("opcion", font5.getText().toString() );
                 cf.setArguments(bundle);
+                break;
         }
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, cf).commit();
 

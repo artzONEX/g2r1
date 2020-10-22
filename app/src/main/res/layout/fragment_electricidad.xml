@@ -24,7 +24,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
-                android:id="@+id/elec1">
+                android:id="@+id/elec1"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -134,7 +135,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
-                android:id="@+id/elec2">
+                android:id="@+id/elec2"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -250,7 +252,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    android:onClick="Botones">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -353,7 +356,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
-                android:id="@+id/elec4">
+                android:id="@+id/elec4"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -462,7 +466,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
-                android:id="@+id/elec5">
+                android:id="@+id/elec5"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -571,7 +576,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
-                android:id="@+id/elec6">
+                android:id="@+id/elec6"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -680,7 +686,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
-                android:id="@+id/elec7">
+                android:id="@+id/elec7"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"

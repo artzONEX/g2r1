@@ -24,7 +24,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
-                android:id="@+id/carp1">
+                android:id="@+id/carp1"
+                android:onClick="Botones">
 
 
                 <LinearLayout
@@ -133,7 +134,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -243,7 +245,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -352,7 +355,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -461,7 +465,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -570,7 +575,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -679,7 +685,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -789,7 +796,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
-                android:id="@+id/carp8">
+                android:id="@+id/carp8"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"

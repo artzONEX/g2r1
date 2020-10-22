@@ -25,7 +25,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/font1"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones">
 
 
                 <LinearLayout
@@ -135,7 +136,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/font2"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -245,7 +247,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/font3"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -354,7 +357,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/font4"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -464,7 +468,7 @@
                 android:id="@+id/font5"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp"
-                tools:ignore="InvalidId">
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
