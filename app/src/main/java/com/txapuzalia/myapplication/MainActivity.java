@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 System.out.println(getString(R.string.numeroTel));
                 startActivity(intent);
                 break;
-            case R.id.navigation_correo:
+            case R.id.navigation_email:
                 Intent in = new Intent(Intent.ACTION_SEND);
                 in.putExtra(Intent.EXTRA_EMAIL, new String[] { "txapuzalia@gmail.com" });
                 in.putExtra(Intent.EXTRA_SUBJECT, "Duda/Queja");
