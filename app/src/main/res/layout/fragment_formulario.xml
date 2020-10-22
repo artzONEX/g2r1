@@ -86,18 +86,6 @@
         app:layout_constraintTop_toBottomOf="@+id/editSurName"
         app:layout_constraintVertical_bias="0.039" />
 
-    <CheckBox
-        android:id="@+id/checkBoxTC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Acepto los terminos y condiciones"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnenviar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etComments" />
-
     <Button
         android:id="@+id/btnenviar"
         android:layout_width="wrap_content"
