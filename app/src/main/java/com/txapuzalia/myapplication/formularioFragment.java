@@ -36,7 +36,7 @@ public class formularioFragment extends Fragment {
     public TextView tvOpcion;
     public EditText etComments;
 
-
+    // -- CREAMOS UNA VARIABLE PARA USAR EN LA BASE DE DATOS, CON ESTA VARIABLE PODEMOS HACER DIFERENTES SENTENCIAS (INSERT, SELECT...)
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Nullable
@@ -53,7 +53,7 @@ public class formularioFragment extends Fragment {
         editPhone = v.findViewById(R.id.editPhone);
         etComments = v.findViewById(R.id.etComments);
 
-
+        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE NOMBRE HA ESCRITO --
         editName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @SuppressLint("RtlHardcoded")
             @Override
@@ -64,7 +64,7 @@ public class formularioFragment extends Fragment {
                 }
             }
         });
-
+        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE APELLIDO HA ESCRITO --
         editSurName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -73,7 +73,7 @@ public class formularioFragment extends Fragment {
                 }
             }
         });
-
+        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE DIRECCIÓN HA ESCRITO --
         editDireccion.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -82,6 +82,7 @@ public class formularioFragment extends Fragment {
                 }
             }
         });
+        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE EMAIL HA ESCRITO --
         editEmail.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -90,7 +91,7 @@ public class formularioFragment extends Fragment {
                 }
             }
         });
-
+        // -- IF PARA COMPROBAR QUE EN EL CAMPO DE TELEFONO HA ESCRITO --
         editPhone.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {

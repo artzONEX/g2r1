@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
+        // -- MEDIANTE ESTE SWITCH PODEMOS AVERIGUAR EN QUÉ BOTÓN HA CLICKADO --
         switch (Item.getItemId())
         {
             case R.id.navigation_telefono:
