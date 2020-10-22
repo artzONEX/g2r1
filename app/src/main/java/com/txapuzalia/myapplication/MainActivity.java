@@ -4,12 +4,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -88,8 +91,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         return true;
     }
-    @Override
-    public void onPointerCaptureChanged(boolean hasCapture) {
+
+    public void Botones(View View) {
+        formularioFragment cf = new formularioFragment();
+        Bundle bundle = new Bundle();
+        switch (View.getId()) {
+            case R.id.otros1:
+                TextView otros1= findViewById(R.id.otros1Text);
+                bundle.putString("opcion", otros1.getText().toString() );
+                cf.setArguments(bundle);
+        }
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, cf).commit();
 
     }
+
 }

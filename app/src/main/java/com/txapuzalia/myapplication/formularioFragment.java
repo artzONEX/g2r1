@@ -35,10 +35,16 @@ public class formularioFragment extends Fragment {
     public EditText editPhone;
     public TextView tvOpcion;
     public EditText etComments;
-
+public String opzioa;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        if (getArguments()!= null){
+            opzioa = getArguments().getString("opcion");
+        }
+    }
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -52,7 +58,7 @@ public class formularioFragment extends Fragment {
         editEmail = v.findViewById(R.id.editEmail);
         editPhone = v.findViewById(R.id.editPhone);
         etComments = v.findViewById(R.id.etComments);
-
+        tvOpcion.setText(opzioa);
 
         editName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @SuppressLint("RtlHardcoded")
@@ -124,6 +130,14 @@ public class formularioFragment extends Fragment {
 
         return v;
     }
+    public static formularioFragment newInstance (String opcion){
+        formularioFragment fragment = new formularioFragment();
+        Bundle args = new Bundle();
+        args.putString("opcion", opcion);
+        fragment.setArguments(args);
+        return fragment;
+    }
+
 
     private boolean comprobarDatos() {
 
