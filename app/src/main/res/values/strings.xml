@@ -15,10 +15,11 @@
     <string name="contacto"></string>
     <string name="descripcion">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
     <string name="phone">Teléfono</string>
+    <string name="numeroTel">651483757</string>
     <string name="name">Nombre</string>
     <string name="surname">Apellidos</string>
     <string name="address">Calle, número, piso, CP</string>
-    <string name="email">correo electrónico</string>
+    <string name="email">Correo electrónico</string>
     <string name="note">Nota...</string>
     <string name="iniciar">Iniciar</string>
     <string name="desliza">Desliza</string>
