@@ -11,7 +11,8 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:padding="24dp"
@@ -22,6 +23,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/font1"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp">
 
@@ -47,6 +49,7 @@
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonFont1"
+                                android:id="@+id/font1Text"
                                 android:textColor="@color/LetraFontaneria"
                                 android:textSize="22dp" />
 
@@ -130,6 +133,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/font2"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp">
 
@@ -155,6 +159,7 @@
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonFont2"
+                                android:id="@+id/font2Text"
                                 android:textColor="@color/LetraFontaneria"
                                 android:textSize="24dp" />
 
@@ -238,6 +243,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/font3"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp">
 
@@ -262,6 +268,7 @@
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonFont3"
+                                android:id="@+id/font3Text"
                                 android:textColor="@color/LetraFontaneria"
                                 android:textSize="24dp" />
 
@@ -345,6 +352,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/font4"
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="8dp">
 
@@ -369,6 +377,7 @@
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonFont4"
+                                android:id="@+id/font4Text"
                                 android:textColor="@color/LetraFontaneria"
                                 android:textSize="24dp" />
 
@@ -452,8 +461,10 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:id="@+id/font5"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                tools:ignore="InvalidId">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -476,6 +487,7 @@
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonFont5"
+                                android:id="@+id/font5Text"
                                 android:textColor="@color/LetraFontaneria"
                                 android:textSize="20dp" />
 
