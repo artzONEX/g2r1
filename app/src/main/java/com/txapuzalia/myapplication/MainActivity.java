@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                    new homeFragment()).commit();
+                    new homeFragment(), null).addToBackStack(null).commit();
             navigationView.setCheckedItem(R.id.navigation_home);
         }
 
@@ -81,19 +81,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new homeFragment()).commit();
                 break;
             case R.id.navigation_pintura:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new pinturaFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new pinturaFragment(), null).addToBackStack(null).commit();
                 break;
             case R.id.navigation_electricista:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new electricidadFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new electricidadFragment(), null).addToBackStack(null).commit();
                 break;
             case R.id.navigation_otros:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new otrosFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new otrosFragment(), null).addToBackStack(null).commit();
                 break;
             case R.id.navigation_fontaneria:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new fontaneriaFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new fontaneriaFragment(), null).addToBackStack(null).commit();
                 break;
             case R.id.navigation_carpinteria:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new carpinteriaFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new carpinteriaFragment(), null).addToBackStack(null).commit();
                 break;
         }
 
