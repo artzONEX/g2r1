@@ -8,10 +8,13 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
+import com.squareup.okhttp.HttpUrl;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
@@ -60,6 +63,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
         switch (Item.getItemId())
         {
+            case R.id.navigation_telefono:
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + getString(R.string.numeroTel)));
+                System.out.println(getString(R.string.numeroTel));
+                startActivity(intent);
+                break;
+            case R.id.navigation_correo:
+                Intent in = new Intent(Intent.ACTION_SEND);
+                in.putExtra(Intent.EXTRA_EMAIL, new String[] { "txapuzalia@gmail.com" });
+                in.putExtra(Intent.EXTRA_SUBJECT, "Duda/Queja");
+                in.setType("message/rfc822");
+                startActivity(Intent.createChooser(in, "Escriba un email"));
+                break;
             case R.id.navigation_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new homeFragment()).commit();
                 break;
