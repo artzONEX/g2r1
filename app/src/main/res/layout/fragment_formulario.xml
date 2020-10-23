@@ -186,6 +186,9 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvOpcion"
                 app:layout_constraintVertical_bias="0.141" />
 
+        </LinearLayout>
+    </ScrollView>
+
             <Button
                 android:id="@+id/btnenviar"
                 android:layout_width="wrap_content"
@@ -196,8 +199,7 @@
                 app:layout_constraintHorizontal_bias="0.51"
                 app:layout_constraintStart_toStartOf="parent" />
 
-        </LinearLayout>
-    </ScrollView>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
