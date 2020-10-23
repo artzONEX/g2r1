@@ -19,16 +19,14 @@ import com.squareup.okhttp.HttpUrl;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Toolbar toolbar;
     private DrawerLayout dl;
-    private NavigationView nv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar=findViewById(R.id.main_toolbar);
+        Toolbar toolbar = findViewById(R.id.main_toolbar);
         //toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
 
@@ -36,7 +34,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         dl= findViewById(R.id.drawer_layout);
-        nv= findViewById(R.id.navigation_informacion);
+        NavigationView nv = findViewById(R.id.navigation_informacion);
         nv.setItemIconTintList(null);
         ActionBarDrawerToggle actionBarDrawerToggle= new ActionBarDrawerToggle(
                 this,

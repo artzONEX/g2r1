@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/relativeLayout"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F0F0"
+    android:orientation="vertical"
 
-    android:layout_height="match_parent">
+    tools:context=".MainActivity">
 
+
+    <!-- SCROLLVIEW PARA DESPLAZAR LA PANTALLA PARA ABAJO -->
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -17,6 +24,8 @@
             android:orientation="vertical"
             android:padding="24dp">
 
+
+            <!-- PRIMERA TAREA -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,15 +48,18 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
+
+                            <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr1"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24sp" />
 
 
+                            <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
@@ -69,6 +81,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <!-- IMAGEN DE LA TAREA -->
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -99,6 +113,7 @@
                             android:orientation="horizontal">
 
 
+                            <!-- BOTÓN SELECCIONAR -->
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -125,6 +140,8 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <!-- SEGUNDA TAREA -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -147,6 +164,8 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
+
+                            <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
@@ -156,6 +175,7 @@
                                 android:textSize="24dp" />
 
 
+                            <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
@@ -177,6 +197,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <!-- IMAGEN DE LA TAREA -->
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -207,6 +229,7 @@
                             android:orientation="horizontal">
 
 
+                            <!-- BOTÓN SELECCIONAR -->
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -233,6 +256,8 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <!-- TERCERA TAREA -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -255,6 +280,8 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
+
+                            <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
@@ -263,7 +290,7 @@
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="24dp" />
 
-
+                            <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
@@ -285,6 +312,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <!-- IMAGEN DE LA TAREA -->
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -315,6 +344,7 @@
                             android:orientation="horizontal">
 
 
+                            <!-- BOTÓN SELECCIONAR -->
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -340,6 +370,8 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <!-- CUARTA TAREA -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -362,6 +394,8 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
+
+                            <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
@@ -371,6 +405,7 @@
                                 android:textSize="24dp" />
 
 
+                            <!-- DESCRIPCIÓN DE LA TAREA-->
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
@@ -392,6 +427,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <!-- IMAGEN DE LA TAREA -->
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -422,6 +459,7 @@
                             android:orientation="horizontal">
 
 
+                            <!-- BOTÓN SELECCIONAR -->
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -447,6 +485,7 @@
 
             </androidx.cardview.widget.CardView>
 
+            <!-- QUINTA TAREA -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -469,6 +508,8 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
+
+                            <!-- NOMBRE DE LA TAREA-->
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
@@ -478,6 +519,7 @@
                                 android:textSize="24dp" />
 
 
+                            <!-- DESCRIPCIÓN DE LA TAREA TAREA -->
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
@@ -499,6 +541,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <!-- IMAGEN TAREA -->
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -529,6 +573,7 @@
                             android:orientation="horizontal">
 
 
+                            <!-- BOTÓN SELECCIONAR -->
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -554,6 +599,8 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <!-- SEXTA TAREA -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -576,6 +623,8 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
+
+                            <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
@@ -585,6 +634,7 @@
                                 android:textSize="20dp" />
 
 
+                            <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
@@ -606,6 +656,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <!-- IMAGEN DE LA TAREA -->
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -636,6 +688,7 @@
                             android:orientation="horizontal">
 
 
+                            <!-- BOTÓN SELECCIONAR-->
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -661,6 +714,8 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <!-- SÉPTIMA TAREA -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -683,6 +738,8 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
+
+                            <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
@@ -692,6 +749,7 @@
                                 android:textSize="20dp" />
 
 
+                            <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
@@ -713,6 +771,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <!-- IMAGEN DE LA TAREA -->
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -743,6 +803,7 @@
                             android:orientation="horizontal">
 
 
+                            <!-- BOTÓN SELECCIONAR -->
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -768,6 +829,8 @@
 
             </androidx.cardview.widget.CardView>
 
+
+            <!-- OCTAVA TAREA -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -790,6 +853,8 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
+
+                            <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
@@ -799,6 +864,7 @@
                                 android:textSize="20dp" />
 
 
+                            <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
@@ -820,6 +886,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
 
+
+                            <!-- IMAGEN DE LA TAREA-->
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -850,6 +918,7 @@
                             android:orientation="horizontal">
 
 
+                            <!-- BOTÓN SELECCIONAR -->
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
