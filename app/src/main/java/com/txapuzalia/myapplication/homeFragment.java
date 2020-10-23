@@ -154,13 +154,12 @@ public class homeFragment extends Fragment {
 
                     }
 
-
-
-
                     @Override
                     public void onPrepareLoad(Drawable placeHolderDrawable) {
 
                     }
+
+
                 });
     
 
