@@ -11,7 +11,8 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:padding="24dp"
@@ -52,22 +53,13 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonOtros1"
                                 android:textColor="@color/LetraOtros"
-                                android:textSize="22dp"
+                                android:textSize="22sp"
                                 android:id="@+id/otros1Text"/>
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="81dp"
-                                android:text="Le programamos la TV con todos los canales disponibles."/>
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/otros1Desc"/>
 
 
                         </LinearLayout>
@@ -79,9 +71,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/otros1" />
+                                android:src="@drawable/otros1"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -89,17 +82,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -109,20 +97,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -161,22 +143,13 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonOtros2"
                                 android:textColor="@color/LetraOtros"
-                                android:textSize="24dp"
+                                android:textSize="24sp"
                                 android:id="@+id/otros2Text"/>
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Le colgamos todos los cuadros que necesite. " />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/otros2Desc" />
 
 
                         </LinearLayout>
@@ -188,9 +161,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/otros2" />
+                                android:src="@drawable/otros2"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -198,17 +172,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -218,21 +187,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
-
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -270,23 +232,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonOtros3"
                                 android:textColor="@color/LetraOtros"
-                                android:textSize="24dp"
+                                android:textSize="24sp"
                                 android:id="@+id/otros3Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Comentar en el formulario." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/otros3Desc" />
 
 
                         </LinearLayout>
@@ -298,9 +251,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/food1"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -308,14 +262,9 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
                             android:layout_width="wrap_content"
@@ -328,20 +277,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 

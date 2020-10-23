@@ -19,7 +19,6 @@ public class homeFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view;
-        Fragment fragment;
         view = inflater.inflate(R.layout.fragment_home, container, false);
         btn=view.findViewById(R.id.btnIniciar);
         btn.setOnClickListener(new View.OnClickListener() {

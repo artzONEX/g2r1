@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
 
     >
 
@@ -10,15 +8,10 @@
             <item android:id="@+id/navigation_home"
                 android:icon="@drawable/casa"
                 android:title="@string/home" />
-            <item android:id="@+id/navigation_informacion"
-                android:title="@string/informacion"
-                android:fontFamily="sans-serif-medium"
-                android:textStyle="bold"
-                android:icon="@drawable/informacion"/>
         </menu>
     </item>
 
-    <item android:title="Sector">
+    <item android:title="@string/sector">
         <menu>
             <item android:id="@+id/navigation_carpinteria"
                 android:title="@string/carpinteria"
@@ -49,22 +42,22 @@
                 android:icon="@drawable/destornillador"/>
         </menu>
     </item>
-        <item android:title="Contacto"         >
-                <item
-                    android:id=" @+id/navigation_correo"
-                    android:fontFamily="sans-serif-medium"
+        <item android:title="@string/contacto">
+            <menu>
+
+                <item android:id=" @+id/navigation_correo"
                     android:title="@string/email"
-                    android:iconTint="@color/colorPrimaryDark"
-                    android:icon="@drawable/correo"
-
-                    />
-                <item android:id="@+id/navigation_telefono"
-                    android:title="@string/phone"
                     android:fontFamily="sans-serif-medium"
-                    android:icon="@drawable/telefono"
-                    />
-
-
+                    android:icon="@drawable/correo" />
+                <item android:id="@+id/navigation_telefonoMovil"
+                    android:title="@string/telMovil"
+                    android:fontFamily="sans-serif-medium"
+                    android:icon="@drawable/telefono" />
+            <item android:id="@+id/navigation_telefonoFijo"
+                android:title="@string/telFijo"
+                android:fontFamily="sans-serif-medium"
+                android:icon="@drawable/telefono_fijo" />
+            </menu>
         </item>
 
 </menu>

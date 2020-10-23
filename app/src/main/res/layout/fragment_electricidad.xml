@@ -49,23 +49,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr1"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp"
+                                android:textSize="24sp"
                                 android:id="@+id/elec1Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="En Txapuzalia, nuestras actividades principales son la ejecución y mantenimiento de todo tipo de instalaciones de calefacción y agua caliente sanitaria, instalaciones colectivas e individuales de gas natural, gas propano y gasóleo; así como instalaciones de energías renovables como solar y climatización con bomba de calor." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/elec1Desc" />
 
 
                         </LinearLayout>
@@ -77,9 +68,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricidad1" />
+                                android:src="@drawable/electricidad1"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -87,41 +79,31 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
 
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
 
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -160,23 +142,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr2"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp"
+                                android:textSize="24sp"
                                 android:id="@+id/elec2Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="En Txapuzalia, nuestras actividades principales son la ejecución y mantenimiento de todo tipo de instalaciones de calefacción y agua caliente sanitaria, instalaciones colectivas e individuales de gas natural, gas propano y gasóleo; así como instalaciones de energías renovables como solar y climatización con bomba de calor." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/elec2Desc" />
 
 
                         </LinearLayout>
@@ -188,9 +161,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista" />
+                                android:src="@drawable/electricista"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -198,41 +172,30 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
 
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
-
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -271,23 +234,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr3"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp"
+                                android:textSize="24sp"
                                 android:id="@+id/elec3Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Realizamos la colocación, reparación y mantenimiento de todo tipo de antenas." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/elec3Desc" />
 
 
                         </LinearLayout>
@@ -299,9 +253,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista" />
+                                android:src="@drawable/electricista"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -309,40 +264,30 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
 
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
 
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -381,23 +326,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr4"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp"
+                                android:textSize="24sp"
                                 android:id="@+id/elec4Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Txapuzalia ofrece soluciones exclusivas en pavimentos adaptadas a cualquier tipo de espacio." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/elec4Desc" />
 
 
                         </LinearLayout>
@@ -409,9 +345,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista" />
+                                android:src="@drawable/electricista"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -419,40 +356,29 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
 
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -491,23 +417,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr5"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp"
+                                android:textSize="24sp"
                                 android:id="@+id/elec5Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Si realizamos un repaso por todas las actividades que realizamos a lo largo de un día seremos conscientes de que la energía eléctrica está presente en la mayoría de ellas. De ahí la importancia de que seamos conscientes de distintos aspectos a tener en cuenta sobre el consumo de la electricidad." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/elec5Desc" />
 
 
                         </LinearLayout>
@@ -519,9 +436,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista" />
+                                android:src="@drawable/electricista"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -529,40 +447,29 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
 
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -601,23 +508,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr6"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="20dp"
+                                android:textSize="20sp"
                                 android:id="@+id/elec6Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Reinstalamos la línea eléctrica de tu calle ." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/elec6Desc" />
 
 
                         </LinearLayout>
@@ -629,9 +527,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista" />
+                                android:src="@drawable/electricista"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -639,40 +538,30 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
 
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
 
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -711,23 +600,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr7"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="20dp"
+                                android:textSize="20sp"
                                 android:id="@+id/elec7Text" />
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/elec7Desc" />
 
 
                         </LinearLayout>
@@ -739,9 +619,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista" />
+                                android:src="@drawable/electricista"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -749,40 +630,31 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            tools:ignore="UselessParent">
 
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
 
                                 android:gravity="center"
-                                android:text="Seleccionar"
-                                android:textColor="#F06A90B5" />
+                                android:text="@string/seleccionar"
+                                android:textColor="#F06A90B5"
+                                tools:ignore="TooManyViews" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 

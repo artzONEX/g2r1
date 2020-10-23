@@ -23,6 +23,7 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class formularioFragment extends Fragment {
 
@@ -35,15 +36,17 @@ public class formularioFragment extends Fragment {
     public EditText editPhone;
     public TextView tvOpcion;
     public EditText etComments;
-public String opzioa;
+    public String  opcion;
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments()!= null){
-            opzioa = getArguments().getString("opcion");
+        Bundle bundle = this.getArguments();
+        if (bundle != null){
+          opcion = getArguments().getString("opcion");
         }
+
     }
     @Nullable
     @Override
@@ -58,7 +61,7 @@ public String opzioa;
         editEmail = v.findViewById(R.id.editEmail);
         editPhone = v.findViewById(R.id.editPhone);
         etComments = v.findViewById(R.id.etComments);
-        tvOpcion.setText(opzioa);
+        tvOpcion.setText(opcion);
 
         editName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @SuppressLint("RtlHardcoded")
@@ -112,7 +115,7 @@ public String opzioa;
                 if (editName.getText().toString().isEmpty() || editSurName.getText().toString().isEmpty() ||
                         editDireccion.getText().toString().isEmpty() || editEmail.getText().toString().isEmpty() ||
                         editPhone.getText().toString().isEmpty()) {
-                    Toast.makeText(getActivity().getApplicationContext(), "Rellene los campos obligatorios", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), "Rellene los campos obligatorios", Toast.LENGTH_SHORT).show();
 
                 } else {
                     if (comprobarDatos()) {
@@ -127,15 +130,7 @@ public String opzioa;
 
         });
 
-
         return v;
-    }
-    public static formularioFragment newInstance (String opcion){
-        formularioFragment fragment = new formularioFragment();
-        Bundle args = new Bundle();
-        args.putString("opcion", opcion);
-        fragment.setArguments(args);
-        return fragment;
     }
 
 
@@ -143,11 +138,11 @@ public String opzioa;
 
         String emailInput = editEmail.getText().toString().trim();
         if (!Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
-            Toast.makeText(getActivity().getApplicationContext(), "El correo electrónico es incorrecto.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), "El correo electrónico es incorrecto.", Toast.LENGTH_SHORT).show();
             return false;
         } else {
             if (editPhone.getText().toString().trim().length() < 9) {
-                Toast.makeText(getActivity().getApplicationContext(), "El número de teléfono es incorrecto.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(Objects.requireNonNull(getActivity()).getApplicationContext(), "El número de teléfono es incorrecto.", Toast.LENGTH_SHORT).show();
                 return false;
             }
 
@@ -156,6 +151,7 @@ public String opzioa;
         return true;
     }
 
+    @SuppressLint("StaticFieldLeak")
     public class MiThread extends AsyncTask<Integer, Integer, Integer> {
         private ProgressDialog progreso;
 
@@ -174,7 +170,7 @@ public String opzioa;
         protected Integer doInBackground (Integer... n){
 
 
-            Map<String, Object> updateMap = new HashMap();
+            Map<String, Object> updateMap = new HashMap<>();
             updateMap.put("Apellido", editSurName.getText().toString());
             updateMap.put("Nombre", editName.getText().toString());
             updateMap.put("Direccion", editDireccion.getText().toString());
@@ -202,8 +198,7 @@ public String opzioa;
             Bundle datosAEnviar = new Bundle();
             // Aquí pon todos los datos que quieras en formato clave, valor
             datosAEnviar.putBoolean("tForm",true);
-            FragmentManager fm = getActivity().getSupportFragmentManager();
-            assert fm != null;
+            FragmentManager fm = Objects.requireNonNull(getActivity()).getSupportFragmentManager();
             FragmentTransaction ft = fm.beginTransaction();
             homeFragment llf = new homeFragment();
             llf.setArguments(datosAEnviar);

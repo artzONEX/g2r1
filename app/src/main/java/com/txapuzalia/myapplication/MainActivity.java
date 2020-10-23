@@ -1,14 +1,6 @@
 package com.txapuzalia.myapplication;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.cardview.widget.CardView;
-import androidx.core.view.GravityCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
-
-
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -16,30 +8,31 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.google.android.material.navigation.NavigationView;
-import com.squareup.okhttp.HttpUrl;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Toolbar toolbar;
     private DrawerLayout dl;
-    private NavigationView nv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        toolbar=findViewById(R.id.main_toolbar);
+        Toolbar toolbar = findViewById(R.id.main_toolbar);
         //toolbar.setTitleTextColor(Color.WHITE);
         setSupportActionBar(toolbar);
 
-        NavigationView navigationView = findViewById(R.id.navigation_informacion);
-        navigationView.setNavigationItemSelectedListener(this);
-
         dl= findViewById(R.id.drawer_layout);
-        nv= findViewById(R.id.navigation_informacion);
+        NavigationView nv = findViewById(R.id.navigation_informacion);
         nv.setItemIconTintList(null);
         ActionBarDrawerToggle actionBarDrawerToggle= new ActionBarDrawerToggle(
                 this,
@@ -56,20 +49,25 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                     new homeFragment()).commit();
-            navigationView.setCheckedItem(R.id.navigation_home);
+            nv.setCheckedItem(R.id.navigation_home);
         }
 
     }
 
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem Item) {
         switch (Item.getItemId())
         {
-            case R.id.navigation_telefono:
+            case R.id.navigation_telefonoFijo:
+                Intent inte = new Intent(Intent.ACTION_DIAL);
+                inte.setData(Uri.parse("tel:" + getString(R.string.numeroFij)));
+                startActivity(inte);
+                break;
+            case R.id.navigation_telefonoMovil:
                 Intent intent = new Intent(Intent.ACTION_DIAL);
                 intent.setData(Uri.parse("tel:" + getString(R.string.numeroTel)));
-                System.out.println(getString(R.string.numeroTel));
                 startActivity(intent);
                 break;
             case R.id.navigation_correo:
@@ -77,13 +75,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 in.putExtra(Intent.EXTRA_EMAIL, new String[] { "txapuzalia@gmail.com" });
                 in.putExtra(Intent.EXTRA_SUBJECT, "Duda/Queja");
                 in.setType("message/rfc822");
-                startActivity(Intent.createChooser(in, "Escriba un email"));
+                startActivity(Intent.createChooser(in, "Escoja un correo"));
                 break;
             case R.id.navigation_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new homeFragment()).commit();
-                break;
-            case R.id.navigation_informacion:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new InformacionFragment()).commit();
                 break;
             case R.id.navigation_pintura:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new pinturaFragment()).commit();
@@ -108,6 +103,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
+    @SuppressLint("NonConstantResourceId")
     public void Botones(View View) {
         formularioFragment cf = new formularioFragment();
         Bundle bundle = new Bundle();
