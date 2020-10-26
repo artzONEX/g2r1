@@ -11,7 +11,8 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:padding="24dp"
@@ -23,14 +24,17 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:id="@+id/pint1"
+                android:onClick="Botones">
 
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -48,22 +52,13 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonPint1"
                                 android:textColor="@color/LetraPintura"
-                                android:textSize="22dp" />
+                                android:textSize="22sp"
+                                android:id="@+id/pint1Text"/>
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="81dp"
-                                android:text="Contamos con la profesionalidad de más de 70 años de experiencia ¡Consúltanos! Los mejores materiales." />
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/pint1Desc" />
 
 
                         </LinearLayout>
@@ -75,9 +70,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/food1"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -85,17 +81,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -105,20 +96,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -131,13 +116,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones"
+                android:id="@+id/pint2">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -156,21 +144,13 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonPint2"
                                 android:textColor="@color/LetraPintura"
-                                android:textSize="24dp" />
+                                android:textSize="24sp"
+                                android:id="@+id/pint2Text"/>
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Lijar, barnizar, encerar… serán algunos de los trabajos, para recuperar la vida del mueble que tanto cariño le tiene." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/pint2Desc" />
 
 
                         </LinearLayout>
@@ -182,9 +162,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/food1"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -192,17 +173,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -212,21 +188,15 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
 
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -239,13 +209,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones"
+                android:id="@+id/pint3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -263,22 +236,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonPint3"
                                 android:textColor="@color/LetraPintura"
-                                android:textSize="24dp" />
+                                android:textSize="24sp"
+                                android:id="@+id/pint3Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/pint3Desc" />
 
 
                         </LinearLayout>
@@ -290,9 +255,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/food1"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -300,17 +266,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -320,20 +281,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -346,13 +300,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones"
+                android:id="@+id/pint4">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -370,22 +327,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonPint4"
                                 android:textColor="@color/LetraPintura"
-                                android:textSize="24dp" />
+                                android:textSize="24sp"
+                                android:id="@+id/pint4Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/pint4Desc" />
 
 
                         </LinearLayout>
@@ -397,9 +346,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/food1"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -407,17 +357,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -427,20 +372,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -453,13 +391,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones"
+                android:id="@+id/pint5">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                   >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -477,22 +418,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonPint5"
                                 android:textColor="@color/LetraPintura"
-                                android:textSize="20dp" />
+                                android:textSize="20sp"
+                                android:id="@+id/pint5Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/pint5Desc" />
 
 
                         </LinearLayout>
@@ -504,9 +437,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/food1"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -514,17 +448,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -534,20 +463,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 

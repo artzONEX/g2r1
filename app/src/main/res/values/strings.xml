@@ -1,28 +1,30 @@
 <resources>
-    <string name="app_name" >Botchapp</string>
-    <string name="informacion">Informacion</string>
+    <string name="app_name" translatable="false">Botchapp</string>
     <string name="carpinteria">Carpinteria</string>
     <string name="fontaneria">Fontaneria</string>
     <string name="electricista">Electricista</string>
     <string name="pintura">Pintura</string>
     <string name="otros">Otros</string>
 
-    <string name="openNavDrawer">Navigation Drawer Open</string>
-    <string name="closeNavDrawer">Navigation Drawer Close</string>
-    <string name="numero">689345621</string>
-    <string name="Email">txapuzalia@gmail.com</string>
-    <string name="home">Home</string>
-    <string name="contacto"></string>
+    <string name="openNavDrawer" translatable="false">Navigation Drawer Open</string>
+    <string name="closeNavDrawer" translatable="false">Navigation Drawer Close</string>
+    <string name="numero" translatable="false">689345621</string>
+    <string name="Email" translatable="false">txapuzalia@gmail.com</string>
+    <string name="home" translatable="false">Home</string>
     <string name="descripcion">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
     <string name="phone">Teléfono</string>
-    <string name="numeroTel">651483757</string>
+    <string name="telFijo">Teléfono fijo</string>
+    <string name="telMovil">Teléfono móvil</string>
+    <string name="numeroTel" translatable="false">619423516</string>
+    <string name="numeroFij" translatable="false">944453006</string>
     <string name="name">Nombre</string>
     <string name="surname">Apellidos</string>
     <string name="address">Calle, número, piso, CP</string>
     <string name="email">Correo electrónico</string>
-    <string name="note">Nota...</string>
+    <string name="note">Nota…</string>
     <string name="iniciar">Iniciar</string>
     <string name="desliza">Desliza</string>
+
     <string name="botonCarp1">Reforma general</string>
     <string name="botonCarp2">Mantenimiento de muebles</string>
     <string name="botonCarp3">Puertas exteriores e interiores</string>
@@ -35,10 +37,9 @@
     <string name="botonElectr1">Instalacion porteros automaticos</string>
     <string name="botonElectr2">Instalacion de calefacciones</string>
     <string name="botonElectr3">Instalaciones de antenas</string>
-    <string name="botonElectr4">Suelos</string>
-    <string name="botonElectr5">Sistema de ahorro energetico</string>
-    <string name="botonElectr6">Reubicacion electrica</string>
-    <string name="botonElectr7">Otros</string>
+    <string name="botonElectr4">Sistema de ahorro energetico</string>
+    <string name="botonElectr5">Reubicacion electrica</string>
+    <string name="botonElectr6">Otros</string>
 
     <string name="botonPint1">Interiores</string>
     <string name="botonPint2">Empapelado</string>
@@ -59,5 +60,48 @@
     <string name="descripcion2">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
 
     <string name="textoGeneralOpciones">Elige la tarea que necesite</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="opcion_elegida">OPCION ELEGIDA:</string>
+
+    <string name="seleccionar">Seleccionar</string>
+    <string name="foto">Foto</string>
+    <string name="sector">Sector</string>
+    <string name="contacto">Contacto</string>
+    <string name="opcion">Opción</string>
+    <string name="btnHome">Formulario</string>
+
+    <string name="carp1Desc">Contamos con la profesionalidad de más de 70 años de experiencia ¡Consúltanos!</string>
+    <string name="carp2Desc">Lijar, barnizar, encerar… serán algunos de los trabajos, para recuperar la vida del mueble.</string>
+    <string name="carp3Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="carp4Desc">Arreglo de muebles de cocina,sustituir mueble fregadero,cambiar bisagras,etc…</string>
+    <string name="carp5Desc">Reparaciones de armarios corredera y abatibles, blindadas y acorazadas,etc…</string>
+    <string name="carp6Desc">Contamos con profesionales, para montar y desmontar todo tipo de muebles.</string>
+    <string name="carp7Desc">Les lijamos los muebles tanto viejos como nuevos.</string>
+    <string name="carp8Desc">Podemos dar a los muebles un acabado especial así como alargar su vida útil mediante la restauración.</string>
+
+    <string name="elec1Desc">Instalamos su nuevo portero automático o lo actualizamos a videoportero.</string>
+    <string name="elec2Desc">Nuestras actividades principales son la ejecución y mantenimiento de todo tipo de instalaciones de calefacción.</string>
+    <string name="elec3Desc">Realizamos la colocación, reparación y mantenimiento de todo tipo de antenas.</string>
+    <string name="elec4Desc">Txapuzalia ofrece soluciones exclusivas en pavimentos adaptadas a cualquier tipo de espacio.</string>
+    <string name="elec5Desc">Reubicar cables o líneas eléctricas. Mover el cable de luz que llega al domicilio. Reubicar transformador.</string>
+    <string name="elec6Desc">Reparar averías eléctricas.</string>
+
+
+    <string name="font1Desc">Reparación de goteras y filtraciones en el hogar. Arreglo de goteras provocadas por filtraciones de agua.</string>
+    <string name="font2Desc">Tipos de rotura de tuberías y su reparación profesional.</string>
+    <string name="font3Desc">Detección y localización de fugas de agua, asi como su reparacion y mantenimiento.</string>
+    <string name="font4Desc">Reparación y limpieza de sifones. Contamos con repuestos originales de válvulas, etc.</string>
+    <string name="font5Desc">Mantenimiento abastecimiento de agua potable y evacuación de aguas residuales</string>
+
+    <string name="otros1Desc">Le programamos la TV con todos los canales disponibles.</string>
+    <string name="otros2Desc">Le colgamos todos los cuadros que necesite.</string>
+    <string name="otros3Desc">Comentar en el formulario.</string>
+
+    <string name="pint1Desc">Utilizamos pintura plástica al agua ya que no tiene olores desagradables y se seca rápido.</string>
+    <string name="pint2Desc">Empapelamos paredes y techos y todo tipo de estancias: salones, baños, etc…</string>
+    <string name="pint3Desc">Colocamos vinilos para exteriores en escaparates y ventanas con un resultado estupendo.</string>
+    <string name="pint4Desc">Nivelamos una pared y la preparamos para un pintado con un acabado mate en paredes interiores.</string>
+    <string name="pint5Desc">Rascado de las paredes para retirar la pintura antigua o el papel pintado antes de aplicar la nueva.</string>
+
 
 </resources>

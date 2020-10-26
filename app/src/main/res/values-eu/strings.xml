@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="carpinteria">Zurgintza</string>
+    <string name="fontaneria">Iturgintza</string>
+    <string name="electricista">Elektrikari</string>
+    <string name="pintura">Pintura</string>
+    <string name="otros">Beste batzuk</string>
+
+
+    <string name="descripcion">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
+    <string name="phone">Telefono</string>
+    <string name="telFijo">Telefono finko</string>
+    <string name="telMovil">Telefono mugikor</string>
+    <string name="name">Izena</string>
+    <string name="surname">Abizena</string>
+    <string name="address">Kalea, zenbakia, pisua, PK</string>
+    <string name="email">Posta elektronikoa</string>
+    <string name="note">Ohar…</string>
+    <string name="iniciar">Hasi</string>
+    <string name="desliza">Irristatu</string>
+
+
+    <string name="botonCarp1">Erreforma orokorra</string>
+    <string name="botonCarp2">Altzarien mantentze-lanak</string>
+    <string name="botonCarp3">Kanpoko eta barruko ateak</string>
+    <string name="botonCarp4">Lurzoruak</string>
+    <string name="botonCarp5">Armairu txertatuak konpontzea</string>
+    <string name="botonCarp6">Altzariak muntatzea eta desmuntatzea</string>
+    <string name="botonCarp7">Zurezko altzariak lixatzea</string>
+    <string name="botonCarp8">Beste bat</string>
+
+    <string name="botonElectr1">Atezain instalazioa</string>
+    <string name="botonElectr2">Berokuntzak instalatzea</string>
+    <string name="botonElectr3">Antenen instalazioak</string>
+    <string name="botonElectr4">Aurrezteko sistema</string>
+    <string name="botonElectr5">Birkokapen elektrikoa</string>
+    <string name="botonElectr6">Beste bat</string>
+
+    <string name="botonPint1">Barrukoak</string>
+    <string name="botonPint2">Papereztatzea</string>
+    <string name="botonPint3">Biniloa jartzea</string>
+    <string name="botonPint4">Hormak zarpeatzea</string>
+    <string name="botonPint5">Beste bat</string>
+
+    <string name="botonFont1">Itoginak konpontzea</string>
+    <string name="botonFont2">Hodiak konpontzea</string>
+    <string name="botonFont3">Ur-ihesak</string>
+    <string name="botonFont4">Sifoiak konpontzea</string>
+    <string name="botonFont5">Beste bat</string>
+
+    <string name="botonOtros1">Telebista programatzea</string>
+    <string name="botonOtros2">Koadroak zintzilikatu</string>
+    <string name="botonOtros3">Beste bat</string>
+
+    <string name="descripcion2">Batchapp etxeko akatsak konpontzeko gure zerbitzuak erosteko aplikazioa da</string>
+
+    <string name="textoGeneralOpciones">Aukeratu behar duzun ataza</string>
+    <string name="enviar">BIDALI</string>
+    <string name="opcion_elegida">HAUTATUTAKO AUKERA:</string>
+
+    <string name="seleccionar">Hautatu</string>
+    <string name="foto">Argazkia</string>
+    <string name="sector">Sektorea</string>
+    <string name="contacto">Harremanetarako</string>
+    <string name="opcion">Aukera</string>
+    <string name="btnHome">Formularioa</string>
+
+    <string name="carp1Desc">70 urtetik gorako esperientziaren profesionaltasuna dugu. Galde iezaguzu!</string>
+    <string name="carp2Desc">Lixatzea, bernizatzea, argizaria ematea… izango dira altzariaren bizitza berreskuratzeko lanetako batzuk.</string>
+    <string name="carp3Desc">Mota guztietako ateak konpontzea, aluminiozkoak, PVCzkoak, zurezkoak, mistoak.</string>
+    <string name="carp4Desc">Sukaldeko altzariak konpontzea, garbitzeko altzaria aldatzea, bandak aldatzea, etab.</string>
+    <string name="carp5Desc">Armairu lerragarri eta eraisgarriak, blindatuak eta korazatuak, etab. konpontzea</string>
+    <string name="carp6Desc">Era guztietako altzariak muntatu eta desmuntatzeko profesionalak ditugu.</string>
+    <string name="carp7Desc">Altzari zaharrak zein berriak lixatu.</string>
+    <string name="carp8Desc">Altzariei akabera berezia eman diezaiekegu, baita haien bizitza erabilgarria luzatu ere, zaharberritzearen bidez.</string>
+
+    <string name="elec1Desc">Atezain automatiko berria instalatuko dugu edo bideo-atezainari eguneratuko diogu.</string>
+    <string name="elec2Desc">Berokuntza-instalazio mota guztiak egitea eta mantentzea da gure jarduera nagusia.</string>
+    <string name="elec3Desc">Era guztietako antenak jarri, konpondu eta mantentzen ditugu.</string>
+    <string name="elec4Desc">Txapuzaliak irtenbide esklusiboak eskaintzen ditu edozein espaziotara egokitutako zoladuretan.</string>
+    <string name="elec5Desc">Kableak edo linea elektrikoak birkokatzea. Etxera iristen den argi-kablea mugitu. Transformadorea birkokatu.</string>
+    <string name="elec6Desc">Matxura elektrikoak konpontzea.</string>
+
+    <string name="font1Desc">Itoginak konpontzea eta etxeko filtrazioak. Ura iragazteak eragindako itoginak konpontzea.</string>
+    <string name="font2Desc">Hodien haustura motak eta haien konponketa profesionala.</string>
+    <string name="font3Desc">Ur ihesak atzeman eta lokalizatzea, baita horiek konpondu eta mantentzea ere.</string>
+    <string name="font4Desc">Sifoiak konpondu eta garbitzea. Balbulen jatorrizko ordezko piezak ditugu, etab.</string>
+    <string name="font5Desc">Edateko uraren hornidura eta hondakin uren hustuketa mantentzea</string>
+
+    <string name="otros1Desc">Telebista kanal guztiekin programatuko dizugu.</string>
+    <string name="otros2Desc">Behar dituzun koadro guztiak zintzilikatuko dizkizugu.</string>
+    <string name="otros3Desc">Formularioan komentatu.</string>
+
+    <string name="pint1Desc">Pintura plastikoa erabiltzen dugu uretan, ez baitu usain txarrik eta azkar lehortzen baita.</string>
+    <string name="pint2Desc">Hormak eta sabaiak eta era guztietako gelak (aretoak, komunak, etab.) papereztatuko ditugu.</string>
+    <string name="pint3Desc">Kanpoaldeetarako biniloak jarriko ditugu erakusleihoetan eta leihoetan, eta emaitza bikaina izango dute.</string>
+    <string name="pint4Desc">Horma bat nibelatu, eta barruko hormetan akabera matez pintatzeko prestatu.</string>
+    <string name="pint5Desc">Pintura zaharra edo paper pintatua kendu aurretik hormak harraskatzea.</string>
+
+
+</resources>
