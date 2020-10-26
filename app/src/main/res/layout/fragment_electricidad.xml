@@ -44,7 +44,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="385dp"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
@@ -52,7 +52,7 @@
                             <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="57dp"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr1"
                                 android:textColor="@color/LetraCarpinteria"
@@ -61,7 +61,7 @@
 
                             <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
-                                android:layout_width="199dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:text="En Txapuzalia, nuestras actividades principales son la ejecución y mantenimiento de todo tipo de instalaciones de calefacción y agua caliente sanitaria, instalaciones colectivas e individuales de gas natural, gas propano y gasóleo; así como instalaciones de energías renovables como solar y climatización con bomba de calor." />
 
@@ -160,7 +160,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="385dp"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
@@ -168,7 +168,7 @@
                             <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="57dp"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr2"
                                 android:textColor="@color/LetraCarpinteria"
@@ -177,7 +177,7 @@
 
                             <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
-                                android:layout_width="199dp"
+                                android:layout_width="400dp"
                                 android:layout_height="match_parent"
                                 android:text="En Txapuzalia, nuestras actividades principales son la ejecución y mantenimiento de todo tipo de instalaciones de calefacción y agua caliente sanitaria, instalaciones colectivas e individuales de gas natural, gas propano y gasóleo; así como instalaciones de energías renovables como solar y climatización con bomba de calor." />
 
@@ -276,7 +276,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="390dp"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
@@ -284,7 +284,7 @@
                             <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="57dp"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr3"
                                 android:textColor="@color/LetraCarpinteria"
@@ -292,7 +292,7 @@
 
                             <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
-                                android:layout_width="199dp"
+                                android:layout_width="400dp"
                                 android:layout_height="match_parent"
                                 android:text="Realizamos la colocación, reparación y mantenimiento de todo tipo de antenas." />
 
@@ -390,7 +390,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="395dp"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
@@ -398,7 +398,7 @@
                             <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="57dp"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr4"
                                 android:textColor="@color/LetraCarpinteria"
@@ -407,7 +407,7 @@
 
                             <!-- DESCRIPCIÓN DE LA TAREA-->
                             <TextView
-                                android:layout_width="199dp"
+                                android:layout_width="385dp"
                                 android:layout_height="match_parent"
                                 android:text="Txapuzalia ofrece soluciones exclusivas en pavimentos adaptadas a cualquier tipo de espacio." />
 
@@ -504,7 +504,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="395dp"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
@@ -512,7 +512,7 @@
                             <!-- NOMBRE DE LA TAREA-->
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="57dp"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr5"
                                 android:textColor="@color/LetraCarpinteria"
@@ -521,7 +521,7 @@
 
                             <!-- DESCRIPCIÓN DE LA TAREA TAREA -->
                             <TextView
-                                android:layout_width="199dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:text="Si realizamos un repaso por todas las actividades que realizamos a lo largo de un día seremos conscientes de que la energía eléctrica está presente en la mayoría de ellas. De ahí la importancia de que seamos conscientes de distintos aspectos a tener en cuenta sobre el consumo de la electricidad." />
 
@@ -619,7 +619,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="370dp"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
@@ -627,7 +627,7 @@
                             <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="57dp"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr6"
                                 android:textColor="@color/LetraCarpinteria"
@@ -636,7 +636,7 @@
 
                             <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
-                                android:layout_width="199dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:text="Reinstalamos la línea eléctrica de tu calle ." />
 
@@ -734,7 +734,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="385dp"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
@@ -742,7 +742,7 @@
                             <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="57dp"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonElectr7"
                                 android:textColor="@color/LetraCarpinteria"
@@ -751,7 +751,7 @@
 
                             <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
-                                android:layout_width="199dp"
+                                android:layout_width="395dp"
                                 android:layout_height="match_parent"
                                 android:text="Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas." />
 
@@ -849,7 +849,7 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="380dp"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
@@ -857,7 +857,7 @@
                             <!-- NOMBRE DE LA TAREA -->
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="57dp"
+                                android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="Otros"
                                 android:textColor="@color/LetraCarpinteria"
@@ -866,7 +866,7 @@
 
                             <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
-                                android:layout_width="199dp"
+                                android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:text="Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas." />
 
