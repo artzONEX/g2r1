@@ -21,6 +21,8 @@ public class homeFragment extends Fragment {
         final View view;
         view = inflater.inflate(R.layout.fragment_home, container, false);
         btn=view.findViewById(R.id.btnIniciar);
+
+        // -- UNA FUNCION QUE SE EJECUTA CUANDO SE CLICKA EL BOTÓN DE ABAJO, EL CUAL ABRE EL MENÚ LATERAL --
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -34,13 +36,15 @@ public class homeFragment extends Fragment {
 
 
         });
+
+        // -- UN CONTAINER QUE TRAE TODA LA INFORMACIÓN DEL FORMULARIO PARA SABER SI SE HA INSERTADO LA INFORMACIÓN EN LA BASE DE DATOS --
         Bundle datosRecuperados = getArguments();
 
         if (datosRecuperados != null) {
-            // Y ahora puedes recuperar usando get en lugar de put
+            // -- Y AHORA PUEDES RECUPERAR USANDO GET EN LUGAR DE PUT --
 
             boolean toastFormulario = datosRecuperados.getBoolean("tForm");
-
+            // -- EN CASO DE QUE SE HAYA INSERTADO LA INFORMACIÓN EN LA BASE DE DATOS, ENSEÑARÁ UN MENSAJE EN EL QUE SE DICE QUE SE HA INSERTADO EN LA BASE DE DATOS --
             if (toastFormulario){
                 Toast.makeText(getActivity(),"Su solicitud se ha almacenado correctamente",Toast.LENGTH_LONG).show();
             }else{

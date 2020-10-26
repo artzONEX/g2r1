@@ -6,136 +6,243 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/editPhone"
-        android:layout_width="370dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="@string/phone"
-        android:inputType="phone"
-        android:maxLength="9"
-        android:textSize="24sp"
-        android:textStyle="bold"
+
+    <!-- SCROLLVIEW PARA DESPLAZAR LA PANTALLA PARA ABAJO -->
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDireccion"
-        app:layout_constraintVertical_bias="0.047" />
-
-    <EditText
-        android:id="@+id/editName"
-        android:layout_width="370dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#F2FFFFFF"
-        android:ems="10"
-        android:hint="@string/name"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.07" />
-
-    <EditText
-        android:id="@+id/editSurName"
-        android:layout_width="370dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#F2FFFFFF"
-        android:ems="10"
-        android:hint="@string/surname"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editName"
-        app:layout_constraintVertical_bias="0.022" />
-
-    <EditText
-        android:id="@+id/editDireccion"
-        android:layout_width="370dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#F2FFFFFF"
-        android:ems="10"
-        android:hint="@string/address"
-        android:inputType="textPersonName"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail"
-        app:layout_constraintVertical_bias="0.043" />
-
-    <EditText
-        android:id="@+id/editEmail"
-        android:layout_width="370dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.39"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editSurName"
-        app:layout_constraintVertical_bias="0.039" />
-
-    <Button
-        android:id="@+id/btnenviar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ENVIAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:ignore="MissingConstraints">
 
 
-    <TextView
-        android:id="@+id/tvOpcion"
-        android:layout_width="327dp"
-        android:layout_height="57dp"
-        android:text="Opción"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.678"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.066" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="OPCION ELEGIDA:"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editPhone"
-        app:layout_constraintVertical_bias="0.065" />
 
-    <EditText
-        android:id="@+id/etComments"
-        android:layout_width="367dp"
-        android:layout_height="120dp"
-        android:gravity="top"
-        android:hint="@string/note"
-        android:inputType="text|textMultiLine"
-        app:layout_constraintBottom_toBottomOf="@+id/btnenviar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvOpcion"
-        app:layout_constraintVertical_bias="0.141" />
+            <!-- TÍTULO DEL FORMULARIO -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/tittle"
+                android:textSize="25sp" />
+
+
+            <!-- INPUT TELÉFONO -->
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15dp"
+                android:text="@string/phone" />
+
+            <EditText
+                android:id="@+id/editPhone"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="phone"
+                android:maxLength="9"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editDireccion"
+                app:layout_constraintVertical_bias="0.047"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+
+            <!-- INPUT NOMBRE -->
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_marginStart="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/editName"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_gravity="start"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.07"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+
+            <!-- INPUT APELLIDO -->
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_marginStart="15sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/surname" />
+
+            <EditText
+                android:id="@+id/editSurName"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_gravity="start"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editName"
+                app:layout_constraintVertical_bias="0.022"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+
+            <!-- INPUT DIRECCIÓN -->
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15dp"
+                android:text="@string/address" />
+
+            <EditText
+                android:id="@+id/editDireccion"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_gravity="start"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editEmail"
+                app:layout_constraintVertical_bias="0.043"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+
+            <!-- INPUT EMAIL -->
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15sp"
+                android:layout_marginTop="15dp"
+                android:text="@string/email" />
+
+            <EditText
+                android:id="@+id/editEmail"
+                android:layout_width="370dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.39"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editSurName"
+                app:layout_constraintVertical_bias="0.039"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+
+            <!-- OPCIÓN ESCOGIDA -->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OPCION ELEGIDA:"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.065"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editPhone"
+                app:layout_constraintVertical_bias="0.065" />
+
+            <TextView
+                android:id="@+id/tvOpcion"
+                android:layout_width="327dp"
+                android:layout_height="57dp"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.678"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.066" />
+
+
+            <!-- INPUT NOTA -->
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_marginStart="15sp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/note" />
+
+
+            <!-- BOTÓN ENVIAR-->
+            <EditText
+                android:id="@+id/etComments"
+                android:layout_gravity="start"
+                android:layout_width="367dp"
+                android:layout_height="120dp"
+                android:gravity="top"
+                android:inputType="text|textMultiLine"
+                app:layout_constraintBottom_toBottomOf="@+id/btnenviar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvOpcion"
+                app:layout_constraintVertical_bias="0.141"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+
+            <Button
+                android:id="@+id/btnenviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENVIAR"
+                android:layout_gravity="center"
+                android:background="@color/colorAccent"
+                android:textColor="@color/Fondo"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_margin="5sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etComments" />
+
+        </LinearLayout>
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
