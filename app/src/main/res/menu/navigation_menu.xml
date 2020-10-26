@@ -51,7 +51,7 @@
     </item>
         <item android:title="Contacto"         >
                 <item
-                    android:id=" @+id/navigation_email"
+                    android:id=" @+id/navigation_correo"
                     android:fontFamily="sans-serif-medium"
                     android:title="@string/email"
                     android:iconTint="@color/colorPrimaryDark"

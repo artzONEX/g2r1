@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name" >Botchapp</string>
-    <string name="informacion">Informacion</string>
     <string name="carpinteria">Carpinteria</string>
     <string name="fontaneria">Fontaneria</string>
     <string name="electricista">Electricista</string>
@@ -12,17 +11,20 @@
     <string name="numero">689345621</string>
     <string name="Email">txapuzalia@gmail.com</string>
     <string name="home">Home</string>
-    <string name="contacto"></string>
     <string name="descripcion">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
     <string name="phone">Teléfono</string>
-    <string name="numeroTel">651483757</string>
+    <string name="telFijo">Teléfono fijo</string>
+    <string name="telMovil">Teléfono móvil</string>
+    <string name="numeroTel">619423516</string>
+    <string name="numeroFij">944453006</string>
     <string name="name">Nombre</string>
     <string name="surname">Apellidos</string>
     <string name="address">Calle, número, piso, CP</string>
     <string name="email">Correo electrónico</string>
-    <string name="note">Nota...</string>
+    <string name="note">Nota…</string>
     <string name="iniciar">Iniciar</string>
     <string name="desliza">Desliza</string>
+
     <string name="botonCarp1">Reforma general</string>
     <string name="botonCarp2">Mantenimiento de muebles</string>
     <string name="botonCarp3">Puertas exteriores e interiores</string>
@@ -59,5 +61,47 @@
     <string name="descripcion2">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
 
     <string name="textoGeneralOpciones">Elige la tarea que necesite</string>
+    <string name="enviar">ENVIAR</string>
+    <string name="opcion_elegida">OPCION ELEGIDA:</string>
+
+    <string name="seleccionar">Seleccionar</string>
+    <string name="foto">Foto</string>
+    <string name="sector">Sector</string>
+    <string name="contacto">Contacto</string>
+    <string name="opcion">Opción</string>
+    <string name="btnHome">Formulario</string>
+
+    <string name="carp1Desc">Contamos con la profesionalidad de más de 70 años de experiencia ¡Consúltanos! Los mejores materiales.</string>
+    <string name="carp2Desc">Lijar, barnizar, encerar… serán algunos de los trabajos, para recuperar la vida del mueble que tanto cariño le tiene.</string>
+    <string name="carp3Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="carp4Desc">Arreglo de muebles de cocina,sustituir mueble fregadero,cambiar bisagras,cambiar rodapie hinchado,poner baldas nuevas,etc…</string>
+    <string name="carp5Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="carp6Desc">Le ayudamos a su mudanza de una manera eficaz sin sobresaltos. Contamos con profesionales, para montar y desmontar todo tipo de muebles. Retiramos todo tipo de materiales para punto limpio. Traslados entre islas. Seguro de responsabilidad civil y seguro de carga.</string>
+    <string name="carp7Desc">Les lijamos los muebles tanto viejos como nuevos.</string>
+    <string name="carp8Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+
+    <string name="elec1Desc">En Txapuzalia, nuestras actividades principales son la ejecución y mantenimiento de todo tipo de instalaciones de calefacción y agua caliente sanitaria, instalaciones colectivas e individuales de gas natural, gas propano y gasóleo; así como instalaciones de energías renovables como solar y climatización con bomba de calor.</string>
+    <string name="elec2Desc">En Txapuzalia, nuestras actividades principales son la ejecución y mantenimiento de todo tipo de instalaciones de calefacción y agua caliente sanitaria, instalaciones colectivas e individuales de gas natural, gas propano y gasóleo; así como instalaciones de energías renovables como solar y climatización con bomba de calor.</string>
+    <string name="elec3Desc">Realizamos la colocación, reparación y mantenimiento de todo tipo de antenas.</string>
+    <string name="elec4Desc">Txapuzalia ofrece soluciones exclusivas en pavimentos adaptadas a cualquier tipo de espacio.</string>
+    <string name="elec5Desc">Si realizamos un repaso por todas las actividades que realizamos a lo largo de un día seremos conscientes de que la energía eléctrica está presente en la mayoría de ellas. De ahí la importancia de que seamos conscientes de distintos aspectos a tener en cuenta sobre el consumo de la electricidad.</string>
+    <string name="elec6Desc">Reinstalamos la línea eléctrica de tu calle .</string>
+    <string name="elec7Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="font1Desc">Contamos con la profesionalidad de más de 70 años de experiencia ¡Consúltanos! Los mejores materiales.</string>
+    <string name="font2Desc">Lijar, barnizar, encerar… serán algunos de los trabajos, para recuperar la vida del mueble que tanto cariño le tiene.</string>
+    <string name="font3Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="font4Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="font5Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+
+    <string name="otros1Desc">Le programamos la TV con todos los canales disponibles.</string>
+    <string name="otros2Desc">Le colgamos todos los cuadros que necesite.</string>
+    <string name="otros3Desc">Comentar en el formulario.</string>
+
+    <string name="pint1Desc">Contamos con la profesionalidad de más de 70 años de experiencia ¡Consúltanos! Los mejores materiales.</string>
+    <string name="pint2Desc">Lijar, barnizar, encerar… serán algunos de los trabajos, para recuperar la vida del mueble que tanto cariño le tiene.</string>
+    <string name="pint3Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="pint4Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="pint5Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+
 
 </resources>
