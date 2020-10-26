@@ -6,6 +6,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/Fondo"
     >
+
+
+    <!-- EL SCROLLVIEW PARA PODER BAJAR -->
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
@@ -24,7 +27,7 @@
             android:orientation="vertical">
 
 
-
+            <!-- IMAGEN DEL LOGO -->
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="match_parent"
@@ -35,6 +38,8 @@
                 tools:srcCompat="@tools:sample/avatars"
                 android:contentDescription="@string/foto" />
 
+
+            <!-- EL TEXTO SOBRE TXAPUZALIA -->
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
@@ -47,6 +52,7 @@
                 tools:ignore="MissingConstraints" />
 
 
+            <!-- BOTÓN PARA IR A ATRÁS -->
             <Button
                 android:id="@+id/btnIniciar"
                 android:layout_width="match_parent"
