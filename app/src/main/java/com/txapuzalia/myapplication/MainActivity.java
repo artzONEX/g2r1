@@ -193,11 +193,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 bundle.putString("opcion", elec6.getText().toString() );
                 cf.setArguments(bundle);
                 break;
-            case R.id.elec7:
-                TextView elec7= findViewById(R.id.elec7Text);
-                bundle.putString("opcion", elec7.getText().toString() );
-                cf.setArguments(bundle);
-                break;
             case R.id.pint1:
                 TextView pint1= findViewById(R.id.pint1Text);
                 bundle.putString("opcion", pint1.getText().toString() );

@@ -1,22 +1,22 @@
 <resources>
-    <string name="app_name" >Botchapp</string>
+    <string name="app_name" translatable="false">Botchapp</string>
     <string name="carpinteria">Carpinteria</string>
     <string name="fontaneria">Fontaneria</string>
     <string name="electricista">Electricista</string>
     <string name="pintura">Pintura</string>
     <string name="otros">Otros</string>
 
-    <string name="openNavDrawer">Navigation Drawer Open</string>
-    <string name="closeNavDrawer">Navigation Drawer Close</string>
-    <string name="numero">689345621</string>
-    <string name="Email">txapuzalia@gmail.com</string>
-    <string name="home">Home</string>
+    <string name="openNavDrawer" translatable="false">Navigation Drawer Open</string>
+    <string name="closeNavDrawer" translatable="false">Navigation Drawer Close</string>
+    <string name="numero" translatable="false">689345621</string>
+    <string name="Email" translatable="false">txapuzalia@gmail.com</string>
+    <string name="home" translatable="false">Home</string>
     <string name="descripcion">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
     <string name="phone">Teléfono</string>
     <string name="telFijo">Teléfono fijo</string>
     <string name="telMovil">Teléfono móvil</string>
-    <string name="numeroTel">619423516</string>
-    <string name="numeroFij">944453006</string>
+    <string name="numeroTel" translatable="false">619423516</string>
+    <string name="numeroFij" translatable="false">944453006</string>
     <string name="name">Nombre</string>
     <string name="surname">Apellidos</string>
     <string name="address">Calle, número, piso, CP</string>
@@ -37,10 +37,9 @@
     <string name="botonElectr1">Instalacion porteros automaticos</string>
     <string name="botonElectr2">Instalacion de calefacciones</string>
     <string name="botonElectr3">Instalaciones de antenas</string>
-    <string name="botonElectr4">Suelos</string>
-    <string name="botonElectr5">Sistema de ahorro energetico</string>
-    <string name="botonElectr6">Reubicacion electrica</string>
-    <string name="botonElectr7">Otros</string>
+    <string name="botonElectr4">Sistema de ahorro energetico</string>
+    <string name="botonElectr5">Reubicacion electrica</string>
+    <string name="botonElectr6">Otros</string>
 
     <string name="botonPint1">Interiores</string>
     <string name="botonPint2">Empapelado</string>

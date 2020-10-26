@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="carpinteria">Zurgintza</string>
+    <string name="fontaneria">Iturgintza</string>
+    <string name="electricista">Elektrikari</string>
+    <string name="pintura">Pintura</string>
+    <string name="otros">Beste batzuk</string>
+
+
+    <string name="descripcion">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
+    <string name="phone">Telefono</string>
+    <string name="telFijo">Telefono finko</string>
+    <string name="telMovil">Telefono mugikor</string>
+    <string name="name">Izena</string>
+    <string name="surname">Abizena</string>
+    <string name="address">Kalea, zenbakia, pisua, PK</string>
+    <string name="email">Posta elektronikoa</string>
+    <string name="note">Ohar…</string>
+    <string name="iniciar">Hasi</string>
+    <string name="desliza">Irristatu</string>
+
+
+    <string name="botonCarp1">Erreforma orokorra</string>
+    <string name="botonCarp2">Altzarien mantentze-lanak</string>
+    <string name="botonCarp3">Kanpoko eta barruko ateak</string>
+    <string name="botonCarp4">Lurzoruak</string>
+    <string name="botonCarp5">Armairu txertatuak konpontzea</string>
+    <string name="botonCarp6">Askotariko altzariak muntatzea eta desmuntatzea</string>
+    <string name="botonCarp7">Zurezko altzariak lixatzea</string>
+    <string name="botonCarp8">Beste bat</string>
+
+    <string name="botonElectr1">Atezain automatikoen instalazioa</string>
+    <string name="botonElectr2">Berokuntzak instalatzea</string>
+    <string name="botonElectr3">Antenen instalazioak</string>
+    <string name="botonElectr4">Energia aurrezteko sistema</string>
+    <string name="botonElectr5">Birkokapen elektrikoa</string>
+    <string name="botonElectr6">Beste bat</string>
+
+    <string name="botonPint1">Barrukoak</string>
+    <string name="botonPint2">Papereztatzea</string>
+    <string name="botonPint3">Biniloa jartzea</string>
+    <string name="botonPint4">Hormak zarpeatzea</string>
+    <string name="botonPint5">Beste bat</string>
+
+    <string name="botonFont1">Itoginak konpontzea</string>
+    <string name="botonFont2">Hodiak konpontzea</string>
+    <string name="botonFont3">Ur-ihesak</string>
+    <string name="botonFont4">Sifoiak konpontzea</string>
+    <string name="botonFont5">Beste bat</string>
+
+    <string name="botonOtros1">Telebista programatzea</string>
+    <string name="botonOtros2">Koadroak zintzilikatu</string>
+    <string name="botonOtros3">Beste bat</string>
+
+    <string name="descripcion2">Batchapp etxeko akatsak konpontzeko gure zerbitzuak erosteko aplikazioa da</string>
+
+    <string name="textoGeneralOpciones">Aukeratu behar duzun ataza</string>
+    <string name="enviar">BIDALI</string>
+    <string name="opcion_elegida">HAUTATUTAKO AUKERA:</string>
+
+    <string name="seleccionar">Hautatu</string>
+    <string name="foto">Argazkia</string>
+    <string name="sector">Sektorea</string>
+    <string name="contacto">Harremanetarako</string>
+    <string name="opcion">Aukera</string>
+    <string name="btnHome">Formularioa</string>
+
+    <string name="carp1Desc">70 urtetik gorako esperientziaren profesionaltasuna dugu. Galde iezaguzu! Materialik onenak.</string>
+    <string name="carp2Desc">Lixatzea, bernizatzea, argizaria ematea... horiek izango dira, besteak beste, hainbeste maite duen altzariaren bizitza berreskuratzeko egin beharreko lanetako batzuk.</string>
+    <string name="carp3Desc">Mota guztietako ateak konpontzea, aluminiozkoak, PVCzkoak, zurezkoak, mistoak.</string>
+    <string name="carp4Desc">Sukaldeko altzariak konpontzea, garbitzeko altzaria aldatzea, bandak aldatzea, puztutako errodapia aldatzea, apal berriak jartzea, etab.</string>
+    <string name="carp5Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="carp6Desc">Le ayudamos a su mudanza de una manera eficaz sin sobresaltos. Contamos con profesionales, para montar y desmontar todo tipo de muebles. Retiramos todo tipo de materiales para punto limpio. Traslados entre islas. Seguro de responsabilidad civil y seguro de carga.</string>
+    <string name="carp7Desc">Les lijamos los muebles tanto viejos como nuevos.</string>
+    <string name="carp8Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+
+    <string name="elec1Desc">En Txapuzalia, nuestras actividades principales son la ejecución y mantenimiento de todo tipo de instalaciones de calefacción y agua caliente sanitaria, instalaciones colectivas e individuales de gas natural, gas propano y gasóleo; así como instalaciones de energías renovables como solar y climatización con bomba de calor.</string>
+    <string name="elec2Desc">En Txapuzalia, nuestras actividades principales son la ejecución y mantenimiento de todo tipo de instalaciones de calefacción y agua caliente sanitaria, instalaciones colectivas e individuales de gas natural, gas propano y gasóleo; así como instalaciones de energías renovables como solar y climatización con bomba de calor.</string>
+    <string name="elec3Desc">Realizamos la colocación, reparación y mantenimiento de todo tipo de antenas.</string>
+    <string name="elec4Desc">Txapuzalia ofrece soluciones exclusivas en pavimentos adaptadas a cualquier tipo de espacio.</string>
+    <string name="elec5Desc">Si realizamos un repaso por todas las actividades que realizamos a lo largo de un día seremos conscientes de que la energía eléctrica está presente en la mayoría de ellas. De ahí la importancia de que seamos conscientes de distintos aspectos a tener en cuenta sobre el consumo de la electricidad.</string>
+    <string name="elec6Desc">Reinstalamos la línea eléctrica de tu calle .</string>
+    <string name="elec7Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="font1Desc">Contamos con la profesionalidad de más de 70 años de experiencia ¡Consúltanos! Los mejores materiales.</string>
+    <string name="font2Desc">Lijar, barnizar, encerar… serán algunos de los trabajos, para recuperar la vida del mueble que tanto cariño le tiene.</string>
+    <string name="font3Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="font4Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="font5Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+
+    <string name="otros1Desc">Le programamos la TV con todos los canales disponibles.</string>
+    <string name="otros2Desc">Le colgamos todos los cuadros que necesite.</string>
+    <string name="otros3Desc">Comentar en el formulario.</string>
+
+    <string name="pint1Desc">Contamos con la profesionalidad de más de 70 años de experiencia ¡Consúltanos! Los mejores materiales.</string>
+    <string name="pint2Desc">Lijar, barnizar, encerar… serán algunos de los trabajos, para recuperar la vida del mueble que tanto cariño le tiene.</string>
+    <string name="pint3Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="pint4Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+    <string name="pint5Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
+
+
+</resources>
