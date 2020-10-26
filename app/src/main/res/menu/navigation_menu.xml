@@ -44,7 +44,6 @@
     </item>
         <item android:title="@string/contacto">
             <menu>
-
                 <item android:id=" @+id/navigation_correo"
                     android:title="@string/email"
                     android:fontFamily="sans-serif-medium"
