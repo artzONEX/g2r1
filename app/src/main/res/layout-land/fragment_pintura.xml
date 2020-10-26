@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#F1F0F0"
-    android:orientation="vertical"
 
     tools:context=".MainActivity">
 
@@ -15,20 +14,18 @@
         tools:ignore="UselessParent">
 
         <LinearLayout
-            android:padding="24dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="24dp">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pint1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp"
-                android:id="@+id/otros1"
-                android:onClick="Botones">
-
-
+                android:onClick="Botones"
+                app:cardCornerRadius="8dp">
 
 
                 <LinearLayout
@@ -43,23 +40,23 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="526dp"
                             android:layout_height="wrap_content"
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/otros1Text"
+                                android:id="@+id/pint1Text"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="@string/botonOtros1"
-                                android:textColor="@color/LetraOtros"
+                                android:text="@string/botonPint1"
+                                android:textColor="@color/LetraPintura"
                                 android:textSize="22sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="81dp"
-                                android:text="@string/otros1Desc"/>
+                                android:text="@string/pint1Desc" />
 
 
                         </LinearLayout>
@@ -73,8 +70,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/otros1"
-                                android:contentDescription="@string/foto" />
+                                android:contentDescription="@string/foto"
+                                android:src="@drawable/food1" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -83,8 +80,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
-                        android:orientation="horizontal"
-                        android:baselineAligned="false">
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -114,12 +111,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pint2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp"
-                android:id="@+id/otros2"
-                android:onClick="Botones">
+                android:onClick="Botones"
+                app:cardCornerRadius="8dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -132,24 +130,24 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="392dp"
+                            android:layout_width="518dp"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
 
                             <TextView
-                                android:id="@+id/otros2Text"
+                                android:id="@+id/pint2Text"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="@string/botonOtros2"
-                                android:textColor="@color/LetraOtros"
+                                android:text="@string/botonPint2"
+                                android:textColor="@color/LetraPintura"
                                 android:textSize="24sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:text="@string/otros2Desc" />
+                                android:text="@string/pint2Desc" />
 
 
                         </LinearLayout>
@@ -163,8 +161,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/otros2"
-                                android:contentDescription="@string/foto" />
+                                android:contentDescription="@string/foto"
+                                android:src="@drawable/food1" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -173,8 +171,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
-                        android:orientation="horizontal"
-                        android:baselineAligned="false">
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -190,6 +188,7 @@
                                 android:layout_marginStart="5dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
+
                                 android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
@@ -204,12 +203,13 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pint3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp"
-                android:id="@+id/otros3"
-                android:onClick="Botones">
+                android:onClick="Botones"
+                app:cardCornerRadius="8dp">
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -222,24 +222,24 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="392dp"
+                            android:layout_width="503dp"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
                             <TextView
-                                android:id="@+id/otros3Text"
+                                android:id="@+id/pint3Text"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="@string/botonOtros3"
-                                android:textColor="@color/LetraOtros"
+                                android:text="@string/botonPint3"
+                                android:textColor="@color/LetraPintura"
                                 android:textSize="24sp" />
 
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:text="@string/otros3Desc" />
+                                android:text="@string/pint3Desc" />
 
 
                         </LinearLayout>
@@ -253,8 +253,8 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1"
-                                android:contentDescription="@string/foto" />
+                                android:contentDescription="@string/foto"
+                                android:src="@drawable/food1" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -263,8 +263,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="6dp"
-                        android:orientation="horizontal"
-                        android:baselineAligned="false">
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="0dp"
@@ -292,6 +292,185 @@
 
             </androidx.cardview.widget.CardView>
 
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pint4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="Botones"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="514dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/pint4Text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="@string/botonPint4"
+                                android:textColor="@color/LetraPintura"
+                                android:textSize="24sp" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/pint4Desc" />
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="-8dp"
+                                android:contentDescription="@string/foto"
+                                android:src="@drawable/food1" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:gravity="center"
+                                android:text="@string/seleccionar"
+                                android:textColor="#F06A90B5" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/pint5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:onClick="Botones"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="14dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="514dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/pint5Text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto_bold"
+                                android:text="@string/botonPint5"
+                                android:textColor="@color/LetraPintura"
+                                android:textSize="20sp" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="@string/pint5Desc" />
+
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="-8dp"
+                                android:contentDescription="@string/foto"
+                                android:src="@drawable/food1" />
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:gravity="center"
+                                android:text="@string/seleccionar"
+                                android:textColor="#F06A90B5" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
     </ScrollView>
