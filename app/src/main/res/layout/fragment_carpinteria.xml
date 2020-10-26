@@ -11,7 +11,8 @@
 
     <ScrollView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
 
         <LinearLayout
             android:padding="24dp"
@@ -23,7 +24,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:id="@+id/carp1"
+                android:onClick="Botones">
 
 
                 <LinearLayout
@@ -48,22 +51,13 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp1"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24sp"
+                                android:id="@+id/carp1Text"/>
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="81dp"
-                                android:text="Contamos con la profesionalidad de más de 70 años de experiencia ¡Consúltanos! Los mejores materiales." />
-
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/carp1Desc" />
 
 
                         </LinearLayout>
@@ -75,9 +69,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/food1"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -85,17 +80,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -105,20 +95,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -131,13 +115,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones"
+                android:id="@+id/carp2">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -155,22 +142,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp2"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24sp"
+                                android:id="@+id/carp2Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Lijar, barnizar, encerar… serán algunos de los trabajos, para recuperar la vida del mueble que tanto cariño le tiene." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/carp2Desc" />
 
 
                         </LinearLayout>
@@ -182,9 +161,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/carpiteria2" />
+                                android:src="@drawable/carpiteria2"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -192,17 +172,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -212,21 +187,15 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
 
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -239,13 +208,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones"
+                android:id="@+id/carp3">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -263,22 +235,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp3"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24sp"
+                                android:id="@+id/carp3Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/carp3Desc" />
 
 
                         </LinearLayout>
@@ -290,9 +254,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/carpinteria3" />
+                                android:src="@drawable/carpinteria3"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -300,17 +265,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -320,20 +280,14 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
+                                android:layout_marginStart="5dp"
 
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -346,13 +300,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones"
+                android:id="@+id/carp4">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -370,22 +327,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp4"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24sp"
+                                android:id="@+id/carp4Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Arreglo de muebles de cocina,sustituir mueble fregadero,cambiar bisagras,cambiar rodapie hinchado,poner baldas nuevas,etc..." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/carp4Desc" />
 
 
                         </LinearLayout>
@@ -397,9 +346,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/carpinteria4" />
+                                android:src="@drawable/carpinteria4"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -407,17 +357,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -427,20 +372,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -453,13 +391,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones"
+                android:id="@+id/carp5">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -477,22 +418,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp5"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="24dp" />
+                                android:textSize="24sp"
+                                android:id="@+id/carp5Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/carp5Desc" />
 
 
                         </LinearLayout>
@@ -504,9 +437,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/carpinteria5" />
+                                android:src="@drawable/carpinteria5"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -514,17 +448,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -534,20 +463,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -560,13 +482,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones"
+                android:id="@+id/carp6">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -584,22 +509,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp6"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="20dp" />
+                                android:textSize="20sp"
+                                android:id="@+id/carp6Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Le ayudamos a su mudanza de una manera eficaz sin sobresaltos. Contamos con profesionales, para montar y desmontar todo tipo de muebles. Retiramos todo tipo de materiales para punto limpio. Traslados entre islas. Seguro de responsabilidad civil y seguro de carga." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/carp6Desc" />
 
 
                         </LinearLayout>
@@ -611,9 +528,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/carpinteria6" />
+                                android:src="@drawable/carpinteria6"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -621,17 +539,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -641,20 +554,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -667,13 +573,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:onClick="Botones"
+                android:id="@+id/carp7">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="14dp">
+                    android:padding="14dp"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -691,22 +600,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonCarp7"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="20dp" />
+                                android:textSize="20sp"
+                                android:id="@+id/carp7Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Les lijamos los muebles tanto viejos como nuevos." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/carp7Desc" />
 
 
                         </LinearLayout>
@@ -718,9 +619,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/carpinteria7" />
+                                android:src="@drawable/carpinteria7"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -728,40 +630,30 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            >
 
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
-                                android:textColor="#F06A90B5" />
+                                android:text="@string/seleccionar"
+                                android:textColor="#F06A90B5"
+                                tools:ignore="TooManyViews" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 
@@ -774,7 +666,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                app:cardCornerRadius="8dp">
+                app:cardCornerRadius="8dp"
+                android:id="@+id/carp8"
+                android:onClick="Botones">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -798,22 +692,14 @@
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/otros"
                                 android:textColor="@color/LetraCarpinteria"
-                                android:textSize="20dp" />
+                                android:textSize="20sp"
+                                android:id="@+id/carp8Text"/>
 
 
                             <TextView
                                 android:layout_width="199dp"
                                 android:layout_height="match_parent"
-                                android:text="Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas." />
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="16dp"
-                                android:orientation="horizontal">
-
-
-                            </LinearLayout>
+                                android:text="@string/carp8Desc" />
 
 
                         </LinearLayout>
@@ -825,9 +711,10 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_alignParentRight="true"
+                                android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/carpinteria8" />
+                                android:src="@drawable/carpinteria8"
+                                android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -835,17 +722,12 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="6dp"
-                        android:orientation="horizontal">
+                        android:layout_marginStart="6dp"
+                        android:orientation="horizontal"
+                        android:baselineAligned="false">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:gravity="center"
@@ -855,20 +737,13 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginLeft="5dp"
-
+                                android:layout_marginStart="5dp"
                                 android:gravity="center"
-                                android:text="Seleccionar"
+                                android:text="@string/seleccionar"
                                 android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:orientation="horizontal" />
 
                     </LinearLayout>
 

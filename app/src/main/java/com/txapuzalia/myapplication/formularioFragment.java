@@ -19,6 +19,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
@@ -33,18 +34,30 @@ public class formularioFragment extends Fragment {
     public EditText editDireccion;
     public EditText editEmail;
     public EditText editPhone;
+    public String opcion;
     public TextView tvOpcion;
     public EditText etComments;
 
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Bundle bundle = this.getArguments();
+        if (bundle != null){
+            opcion = getArguments().getString("opcion");
+        }
+
+    }
+
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_formulario, container, false);
 
-        tvOpcion = v.findViewById(R.id.tvOpcion);
+        tvOpcion = v.findViewById(R.id.opcion);
         btnenviar = v.findViewById(R.id.btnenviar);
         editName = v.findViewById(R.id.editName);
         editSurName = v.findViewById(R.id.editSurName);
@@ -53,7 +66,7 @@ public class formularioFragment extends Fragment {
         editPhone = v.findViewById(R.id.editPhone);
         etComments = v.findViewById(R.id.etComments);
 
-
+        tvOpcion.setText(opcion);
         editName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @SuppressLint("RtlHardcoded")
             @Override
