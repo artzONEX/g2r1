@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
@@ -216,10 +218,10 @@ public class homeFragment extends Fragment {
                 return imageView;
             }
         });
-        /*Animation fadeIn = AnimationUtils.loadAnimation(getContext(), R.anim.fade_in);
+        Animation fadeIn = AnimationUtils.loadAnimation(getContext(), R.anim.fade_in);
         Animation fadeOut = AnimationUtils.loadAnimation(getContext(), R.anim.fade_out);
         imageSwitcher.setInAnimation(fadeIn);
-        imageSwitcher.setOutAnimation(fadeOut);*/
+        imageSwitcher.setOutAnimation(fadeOut);
 
 
         Timer timer = new Timer();

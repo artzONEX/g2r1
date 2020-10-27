@@ -155,6 +155,7 @@ public class formularioFragment extends Fragment {
         return true;
     }
 
+    @SuppressLint("StaticFieldLeak")
     public class MiThread extends AsyncTask<Integer, Integer, Integer> {
         private ProgressDialog progreso;
 

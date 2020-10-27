@@ -32,7 +32,6 @@
                 android:id="@+id/logo"
                 android:layout_width="match_parent"
                 android:layout_height="333dp"
-                android:layout_marginTop="175dp"
                 android:src="@drawable/logo"
                 tools:ignore="MissingConstraints"
                 tools:srcCompat="@tools:sample/avatars"
