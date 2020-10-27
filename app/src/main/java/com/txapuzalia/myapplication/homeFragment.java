@@ -44,7 +44,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class homeFragment extends Fragment {
-    Button btn;
 
     public ImageView flecha;
     public TextView textView3;
@@ -70,7 +69,7 @@ public class homeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view;
         view = inflater.inflate(R.layout.fragment_home, container, false);
-        btn=view.findViewById(R.id.btnIniciar);
+        Button btn = view.findViewById(R.id.btnIniciar);
 
 
         flecha = view.findViewById(R.id.flecha);
@@ -241,7 +240,62 @@ public class homeFragment extends Fragment {
 
 
 
+        btn =view.findViewById(R.id.btnIniciar);
+        btn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                /*FragmentManager fm = getFragmentManager();
+                assert fm != null;
+                FragmentTransaction ft = fm.beginTransaction();
+                formularioFragment llf = new formularioFragment();
+                ft.replace(R.id.fragment_container, llf);
+                ft.commit();*/
+
+                /*ActionBarDrawerToggle actionBarDrawerToggle= new ActionBarDrawerToggle(
+                        getActivity(),
+                        dl,
+                        toolbar,
+                        R.string.openNavDrawer,
+                        R.string.closeNavDrawer
+                );
+                dl.addDrawerListener(actionBarDrawerToggle);
+                actionBarDrawerToggle.syncState();
+                nv.setNavigationItemSelectedListener(MainActivity);*/
+
+                /*getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new homeFragment()).commit();
+                //navigationView.getContext().setCheckedItem(R.id.navigation_home);
+
+                 */
+
+                //dl.openDrawer(dl);
+
+                //dl.openDrawer(GravityCompat.START);
+
+                //dl.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN);
+
+                //dl.openDrawer(Your View, Usually a ListView);
+
+                //dl.openDrawer(nv);
+
+                //dl.openDrawer(Gravity.START);
+
+                ((MainActivity) getActivity()).openDrawer();
+
+
+
+
+            }
+
+
+        });
+
         return view;
+
+
+
+
 
     }
 
