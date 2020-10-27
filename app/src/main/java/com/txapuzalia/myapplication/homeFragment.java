@@ -44,7 +44,6 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class homeFragment extends Fragment {
-    Button btn;
 
     public ImageView flecha;
     public TextView textView3;
@@ -70,7 +69,7 @@ public class homeFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view;
         view = inflater.inflate(R.layout.fragment_home, container, false);
-        btn=view.findViewById(R.id.btnIniciar);
+        Button btn = view.findViewById(R.id.btnIniciar);
 
 
         flecha = view.findViewById(R.id.flecha);
@@ -96,6 +95,7 @@ public class homeFragment extends Fragment {
                 formularioFragment llf = new formularioFragment();
                 ft.replace(R.id.fragment_container, llf);
                 ft.commit();
+                ((MainActivity) getActivity()).openDrawer();
             }
 
 
@@ -227,6 +227,9 @@ public class homeFragment extends Fragment {
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
+
+                if(getActivity() == null)
+                    return;
                 getActivity().runOnUiThread(new Runnable() {
                     public void run() {
                         imageSwitcher.setImageResource(galeria[posicion]);
@@ -241,7 +244,13 @@ public class homeFragment extends Fragment {
 
 
 
+
+
         return view;
+
+
+
+
 
     }
 
