@@ -6,11 +6,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.MediaController;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
+import android.widget.MediaController;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -148,7 +148,47 @@ public class homeFragment extends Fragment {
                 .into(flecha);
                 //.placeholder(R.drawable.flecha)
               //  .error(R.drawable.flecha)
-        ;*/
+        ;
+*/
+
+
+       /* Picasso.get()
+                .load(URL1)
+                .into(new Target() {
+                    @Override
+                    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+
+                        try {
+                            File data = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() );
+                            if (!data.exists()) {
+                                data.mkdirs();
+                            }
+                            FileOutputStream fileOutputStream = new FileOutputStream(new File(data, new Date().toString() + ".png"));
+                            bitmap.compress(Bitmap.CompressFormat.PNG, 90, fileOutputStream);
+                            fileOutputStream.flush();
+                            fileOutputStream.close();
+                            Log.d("GUARDADO", "GUARDADO GUARDADO GUARDADO");
+                        } catch (FileNotFoundException e) {
+                            e.printStackTrace();
+                            Log.d("FALLO", "FALLO FALLO FALLO");
+                        } catch (IOException e2) {
+                            e2.printStackTrace();
+                            Log.d("FALLO", "FALLO FALLO FALLO");
+                        }
+                    }
+
+                    @Override
+                    public void onBitmapFailed(Exception e, Drawable errorDrawable) {
+
+                    }
+
+                    @Override
+                    public void onPrepareLoad(Drawable placeHolderDrawable) {
+
+                    }
+
+
+                });*/
 
 
 
