@@ -1,10 +1,12 @@
 package com.txapuzalia.myapplication;
 
+import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
@@ -12,6 +14,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -35,6 +38,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
@@ -51,6 +55,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Date;
@@ -76,8 +81,9 @@ public class homeFragment extends Fragment {
     private DrawerLayout dl;
     private NavigationView nv;
 
-     String URL1="https://ia601500.us.archive.org/31/items/flecha_20201022/flecha.png";
+     String URL1="https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png";
 
+    private Bitmap bitmapDownload;
 
     @SuppressLint("CutPasteId")
     @Nullable
@@ -107,23 +113,31 @@ public class homeFragment extends Fragment {
 
          */
 
-
+        downloadFile();
 
         //String EDteamImage = "https://ed.team/sites/default/files/styles/16_9_medium/public/2018-04/guia-de-estilos.jpg?itok=73JysFzx";
         //Glide.with(getApplicationContext()).load(EDteamImage).into(flecha);
 
+        //loding image from url
+        bitmapDownload=null;
+        if (bitmapDownload!=null){
+            flecha.setImageBitmap(bitmapDownload);
+        }else { //if we didnt take an image, a blank image will be loaded
+            loadBlankImage();
+
+        }
 
 
 
-
-        Picasso.get()
+        /*Picasso.get()
                 .load(URL1)
 
-                .into(flecha);
+                //.into()
+        ;
                 /*.placeholder(R.drawable.flecha)
                 .error(R.drawable.flecha)*/
                 ;
-
+        /*
         Picasso.get()
                 .load(URL1)
                 .into(new Target() {
@@ -131,7 +145,7 @@ public class homeFragment extends Fragment {
                     public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
 
                         try {
-                            File data = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString() );
+                            File data = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString()+"/REAL");
                             if (!data.exists()) {
                                 data.mkdirs();
                             }
@@ -140,12 +154,15 @@ public class homeFragment extends Fragment {
                             fileOutputStream.flush();
                             fileOutputStream.close();
                             Log.d("GUARDADO", "GUARDADO GUARDADO GUARDADO");
+                            Toast.makeText(getActivity(),"GUARDADO GUARDADO GUARDADO!",Toast.LENGTH_SHORT).show();
                             } catch (FileNotFoundException e) {
                             e.printStackTrace();
                             Log.d("FALLO", "FALLO FALLO FALLO");
+                            Toast.makeText(getActivity(),"FALLO FALLO FALLO!",Toast.LENGTH_SHORT).show();
                         } catch (IOException e2) {
                             e2.printStackTrace();
                             Log.d("FALLO", "FALLO FALLO FALLO");
+                            Toast.makeText(getActivity(),"FALLO FALLO FALLO XD XD!",Toast.LENGTH_SHORT).show();
                         }
                     }
 
@@ -242,7 +259,7 @@ public class homeFragment extends Fragment {
         VideoHome.setMediaController(mediaController);
 
         //INICIAMOS EL VIDEO AUTOMATICAMENTE
-        VideoHome.start();
+        //VideoHome.start();
 
 
         /* ESTA ES LA FUNCION DEL SLIDER AUTOMÁTICO*/
@@ -356,9 +373,83 @@ public class homeFragment extends Fragment {
 
     }
 
+    private void downloadFile() {
+
+
+        //letting having a internet connection without managing it in a thread, like AsyncTask.
+        //We are changing the thread policy to do this. This is not recommended, but we will do this
+        //because we have only one simple task needing a connection, downloading one image from an url
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+
+        if (ContextCompat.checkSelfPermission(getActivity().getBaseContext(),
+                Manifest.permission.INTERNET)
+                == PackageManager.PERMISSION_GRANTED) {
+
+
+            try {
+                //open the connection of the url, take the incoming stream and decode it
+                java.net.URL url = new java.net.URL(URL1);
+                HttpURLConnection connection = (HttpURLConnection) url
+                        .openConnection();
+                connection.setDoInput(true);
+                connection.connect();
+                InputStream input = connection.getInputStream();
+                bitmapDownload = BitmapFactory.decodeStream(input);
+                Toast.makeText(getActivity(),"DESCARGADO DESCARGADO DESCARGADO!",Toast.LENGTH_SHORT).show();
+
+
+                try {
+                    File data = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS).toString()+"/REAL");
+                    if (!data.exists()) {
+                        data.mkdirs();
+                    }
+                    FileOutputStream fileOutputStream = new FileOutputStream(new File(data, new Date().toString() + ".png"));
+                    bitmapDownload.compress(Bitmap.CompressFormat.PNG, 90, fileOutputStream);
+                    fileOutputStream.flush();
+                    fileOutputStream.close();
+                    Log.d("GUARDADO", "GUARDADO GUARDADO GUARDADO");
+                    Toast.makeText(getActivity(),"GUARDADO GUARDADO GUARDADO!",Toast.LENGTH_SHORT).show();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                    Log.d("FALLO", "FALLO FALLO FALLO");
+                    Toast.makeText(getActivity(),"FALLO FALLO FALLO!",Toast.LENGTH_SHORT).show();
+                } catch (IOException e2) {
+                    e2.printStackTrace();
+                    Log.d("FALLO", "FALLO FALLO FALLO");
+                    Toast.makeText(getActivity(),"FALLO FALLO FALLO XD XD!",Toast.LENGTH_SHORT).show();
+                }
+
+            } catch (IOException e) {
+                //if something went wrong, load a blank image
+                loadBlankImage();
+                e.printStackTrace();
+            }
+
+        }else{
+            //if there is not an internet connection, load a blank image.
+            loadBlankImage();
+        }
+
+    }
+
+
+    //load a bitmap from the drawable folder,
+    //when not downloading the correct bitmap
+    public void loadBlankImage(){
+        int w = 30;
+        int h = 30;
+
+        bitmapDownload = BitmapFactory.decodeResource(getResources(), R.drawable.flechax);
+        flecha.setImageBitmap(bitmapDownload);
+
+    }
+
 
 
 
 }
+
+
 
 
