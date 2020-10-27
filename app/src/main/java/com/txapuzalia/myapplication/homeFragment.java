@@ -28,8 +28,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
 import com.squareup.picasso.Picasso;
@@ -89,13 +87,7 @@ public class homeFragment extends Fragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fm = getFragmentManager();
-                assert fm != null;
-                FragmentTransaction ft = fm.beginTransaction();
-                formularioFragment llf = new formularioFragment();
-                ft.replace(R.id.fragment_container, llf);
-                ft.commit();
-                ((MainActivity) getActivity()).openDrawer();
+                MainActivity.botonInicio();
             }
 
 
