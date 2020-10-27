@@ -163,7 +163,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec2"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -255,7 +255,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec3"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -347,7 +347,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec4"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -438,7 +438,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec5"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -529,7 +529,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec3"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 

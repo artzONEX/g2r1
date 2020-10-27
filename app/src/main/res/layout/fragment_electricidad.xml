@@ -164,7 +164,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec2"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -256,7 +256,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec3"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -348,7 +348,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec4"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -439,7 +439,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec5"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -507,7 +507,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="@string/botonElectr5"
+                                android:text="otros"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="24sp"
                                 android:id="@+id/elec6Text"/>
