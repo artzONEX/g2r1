@@ -142,6 +142,17 @@ public class homeFragment extends Fragment {
 
 
 
+        /*Picasso.get()
+                .load(URL1)
+
+                .into(flecha);
+                //.placeholder(R.drawable.flecha)
+              //  .error(R.drawable.flecha)
+        ;*/
+
+
+
+
 
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
