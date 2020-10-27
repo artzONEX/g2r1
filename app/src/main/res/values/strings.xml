@@ -105,5 +105,7 @@
 
 
     <string name="tittle">RELLENA EL FORMULARIO</string>
+    <string name="image_from_url">image_from_url</string>
+
 
 </resources>
