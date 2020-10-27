@@ -1,5 +1,6 @@
 package com.txapuzalia.myapplication;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -40,12 +41,30 @@ public class homeFragment extends Fragment {
     private Toolbar toolbar;
     private DrawerLayout dl;
     private NavigationView nv;
+
+    String URL1="https://ia601500.us.archive.org/31/items/flecha_20201022/flecha.png";
+
+    @SuppressLint("CutPasteId")
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         final View view;
         view = inflater.inflate(R.layout.fragment_home, container, false);
         btn=view.findViewById(R.id.btnIniciar);
+
+
+        flecha = view.findViewById(R.id.flecha);
+        textView3 = view.findViewById(R.id.textView3);
+        scrollView2 = view.findViewById(R.id.scrollView2);
+        logo = view.findViewById(R.id.logo);
+        VideoHome = view.findViewById(R.id.videoview);
+
+        //getActivity().findViewById(R.id.drawer_layout);
+
+        dl= view.findViewById(R.id.drawer_layout);
+        nv= view.findViewById(R.id.navigation_informacion);
+
+        toolbar=view.findViewById(R.id.main_toolbar);
 
         // -- UNA FUNCION QUE SE EJECUTA CUANDO SE CLICKA EL BOTÓN DE ABAJO, EL CUAL ABRE EL MENÚ LATERAL --
         btn.setOnClickListener(new View.OnClickListener() {
