@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.MediaController;
 import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.ImageSwitcher;
@@ -106,9 +107,9 @@ public class homeFragment extends Fragment {
         VideoHome.setVideoURI(videoUri);
 
         //AÑADIMOS LOS CONTROLES DE REPRODUCIR VIDEO
-        //MediaController mediaController = new MediaController(getContext());
-       // mediaController.setAnchorView(VideoHome);
-        //VideoHome.setMediaController(mediaController);
+        MediaController mediaController = new MediaController(getContext());
+        mediaController.setAnchorView(VideoHome);
+        VideoHome.setMediaController(mediaController);
 
         //INICIAMOS EL VIDEO AUTOMATICAMENTE
         VideoHome.start();
