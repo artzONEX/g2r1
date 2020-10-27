@@ -5,16 +5,41 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageSwitcher;
+import android.widget.ImageView;
+import android.widget.ScrollView;
+import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import com.google.android.material.navigation.NavigationView;
+
 public class homeFragment extends Fragment {
     Button btn;
+
+    public ImageView flecha;
+    public TextView textView3;
+    public ScrollView scrollView2;
+    public ImageView logo;
+    private ImageSwitcher imageSwitcher;
+
+    private int posicion;
+    private static final int DURACION = 2000;
+
+    public VideoView VideoHome;
+
+
+    private Toolbar toolbar;
+    private DrawerLayout dl;
+    private NavigationView nv;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
