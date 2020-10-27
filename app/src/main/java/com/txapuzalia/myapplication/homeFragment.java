@@ -26,6 +26,9 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
 
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class homeFragment extends Fragment {
     Button btn;
 
@@ -34,7 +37,7 @@ public class homeFragment extends Fragment {
     public ScrollView scrollView2;
     public ImageView logo;
     private ImageSwitcher imageSwitcher;
-
+    private int[] galeria = {R.drawable.portada, R.drawable.portada2, R.drawable.portada3};
     private int posicion;
     private static final int DURACION = 2000;
 
@@ -138,6 +141,21 @@ public class homeFragment extends Fragment {
         });
 
 
+
+
+        Timer timer = new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            public void run() {
+                getActivity().runOnUiThread(new Runnable() {
+                    public void run() {
+                        imageSwitcher.setImageResource(galeria[posicion]);
+                        posicion++;
+                        if (posicion == galeria.length)
+                            posicion = 0;
+                    }
+                });
+            }
+        }, 0, DURACION);
 
 
 
