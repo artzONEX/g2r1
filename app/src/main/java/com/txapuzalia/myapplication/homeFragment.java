@@ -95,6 +95,7 @@ public class homeFragment extends Fragment {
                 formularioFragment llf = new formularioFragment();
                 ft.replace(R.id.fragment_container, llf);
                 ft.commit();
+                ((MainActivity) getActivity()).openDrawer();
             }
 
 
@@ -226,6 +227,9 @@ public class homeFragment extends Fragment {
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
+
+                if(getActivity() == null)
+                    return;
                 getActivity().runOnUiThread(new Runnable() {
                     public void run() {
                         imageSwitcher.setImageResource(galeria[posicion]);
@@ -240,56 +244,7 @@ public class homeFragment extends Fragment {
 
 
 
-        btn =view.findViewById(R.id.btnIniciar);
-        btn.setOnClickListener(new View.OnClickListener() {
 
-            @Override
-            public void onClick(View v) {
-                /*FragmentManager fm = getFragmentManager();
-                assert fm != null;
-                FragmentTransaction ft = fm.beginTransaction();
-                formularioFragment llf = new formularioFragment();
-                ft.replace(R.id.fragment_container, llf);
-                ft.commit();*/
-
-                /*ActionBarDrawerToggle actionBarDrawerToggle= new ActionBarDrawerToggle(
-                        getActivity(),
-                        dl,
-                        toolbar,
-                        R.string.openNavDrawer,
-                        R.string.closeNavDrawer
-                );
-                dl.addDrawerListener(actionBarDrawerToggle);
-                actionBarDrawerToggle.syncState();
-                nv.setNavigationItemSelectedListener(MainActivity);*/
-
-                /*getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new homeFragment()).commit();
-                //navigationView.getContext().setCheckedItem(R.id.navigation_home);
-
-                 */
-
-                //dl.openDrawer(dl);
-
-                //dl.openDrawer(GravityCompat.START);
-
-                //dl.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_OPEN);
-
-                //dl.openDrawer(Your View, Usually a ListView);
-
-                //dl.openDrawer(nv);
-
-                //dl.openDrawer(Gravity.START);
-
-                ((MainActivity) getActivity()).openDrawer();
-
-
-
-
-            }
-
-
-        });
 
         return view;
 
