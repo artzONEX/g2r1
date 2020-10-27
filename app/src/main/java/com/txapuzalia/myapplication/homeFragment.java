@@ -1,8 +1,12 @@
 package com.txapuzalia.myapplication;
 
 import android.annotation.SuppressLint;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -25,7 +29,14 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.navigation.NavigationView;
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -142,17 +153,17 @@ public class homeFragment extends Fragment {
 
 
 
-        /*Picasso.get()
+        Picasso.get()
                 .load(URL1)
 
                 .into(flecha);
                 //.placeholder(R.drawable.flecha)
               //  .error(R.drawable.flecha)
         ;
-*/
 
 
-       /* Picasso.get()
+
+        Picasso.get()
                 .load(URL1)
                 .into(new Target() {
                     @Override
@@ -188,7 +199,7 @@ public class homeFragment extends Fragment {
                     }
 
 
-                });*/
+                });
 
 
 
