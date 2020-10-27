@@ -19,6 +19,7 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
+import android.widget.ViewSwitcher;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -203,6 +204,22 @@ public class homeFragment extends Fragment {
 
 
 
+
+
+        /* ESTA ES LA FUNCION DEL SLIDER AUTOMÁTICO*/
+        imageSwitcher = view.findViewById(R.id.imageSwitcher);
+        imageSwitcher.setFactory(new ViewSwitcher.ViewFactory() {
+            public View makeView() {
+                ImageView imageView = new ImageView(getActivity());
+                imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
+
+                return imageView;
+            }
+        });
+        /*Animation fadeIn = AnimationUtils.loadAnimation(getContext(), R.anim.fade_in);
+        Animation fadeOut = AnimationUtils.loadAnimation(getContext(), R.anim.fade_out);
+        imageSwitcher.setInAnimation(fadeIn);
+        imageSwitcher.setOutAnimation(fadeOut);*/
 
 
         Timer timer = new Timer();
