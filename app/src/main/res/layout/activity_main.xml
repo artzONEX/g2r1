@@ -19,7 +19,9 @@
             android:id="@+id/fragment_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="56dp" />
+            android:layout_marginTop="56dp" >
+
+        </FrameLayout>
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
@@ -27,16 +29,11 @@
             >
 
             <androidx.appcompat.widget.Toolbar
-                style="@style/miToolbar"
                 android:id="@+id/main_toolbar"
-                android:layout_width="match_parent"
+                style="@style/miToolbar"
+                android:layout_width="276dp"
                 android:layout_height="?attr/actionBarSize"
-                app:titleTextColor="@color/Fondo"
-                />
-
-
-
-
+                app:titleTextColor="@color/Fondo" />
 
 
         </com.google.android.material.appbar.AppBarLayout>
