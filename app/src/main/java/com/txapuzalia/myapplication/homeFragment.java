@@ -1,10 +1,12 @@
 package com.txapuzalia.myapplication;
 
 import android.annotation.SuppressLint;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
@@ -95,6 +97,48 @@ public class homeFragment extends Fragment {
                 Toast.makeText(getActivity(),"Ha habido un error con su solicitud. Vuelva a intentarlo mas tarde.",Toast.LENGTH_LONG).show();
             }
         }
+
+
+
+        //Si el vídeo está detrás de una URL
+        String videoPath = "https://archive.org/download/video3_202010/video3.mp4";
+        Uri videoUri = Uri.parse(videoPath);
+        VideoHome.setVideoURI(videoUri);
+
+        //AÑADIMOS LOS CONTROLES DE REPRODUCIR VIDEO
+        //MediaController mediaController = new MediaController(getContext());
+       // mediaController.setAnchorView(VideoHome);
+        //VideoHome.setMediaController(mediaController);
+
+        //INICIAMOS EL VIDEO AUTOMATICAMENTE
+        VideoHome.start();
+
+
+
+
+
+
+        /* ESTE PROCESO ES EL DE HACER DESAPARECER O APARECER EL MENSAJE DESLIZA*/
+        scrollView2.getViewTreeObserver().addOnScrollChangedListener(new ViewTreeObserver.OnScrollChangedListener() {
+            @Override
+            public void onScrollChanged() {
+                int maxDistance = logo.getHeight();
+                int movement = scrollView2.getScrollY();
+                float alphaFactor = ((movement * 1.0f) / (maxDistance - flecha.getHeight()));
+                if (alphaFactor > 0.14 ) {
+                    textView3.setAlpha(0f);
+                    flecha.setAlpha(0f);
+                }else if( alphaFactor <= 0.2){
+
+                    textView3.setAlpha(1f);
+                    flecha.setAlpha(1f);
+                }
+            }
+        });
+
+
+
+
 
 
         return view;
