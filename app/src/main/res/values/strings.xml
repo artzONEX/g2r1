@@ -105,5 +105,16 @@
 
 
     <string name="tittle">RELLENA EL FORMULARIO</string>
+    <string name="correoTexto">Escoja un correo</string>
+    <string name="formularioBien">Su solicitud se ha almacenado correctamente</string>
+    <string name="formularioMal">Ha habido un error con su solicitud. Vuelva a intentarlo mas tarde.</string>
+    <string name="correoMal">El correo electrónico es incorrecto.</string>
+    <string name="telefonoMal">El número de teléfono es incorrecto.</string>
+    <string name="camposVacios">Rellene los campos obligatorios</string>
+    <string name="telefonoObligatorio">El número de teléfono es obligatorio</string>
+    <string name="emailObligatorio">El correo electrónico es obligatorio</string>
+    <string name="direccionObligatoria">La dirección es obligatorio</string>
+    <string name="apellidoObligatorio">El Apellido es obligatorio</string>
+    <string name="nombreObligatorio">El Nombre es obligatorio</string>
 
 </resources>

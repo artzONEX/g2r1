@@ -99,5 +99,16 @@
     <string name="pint5Desc">Pintura zaharra edo paper pintatua kendu aurretik hormak harraskatzea.</string>
 
     <string name="tittle">BETE INPRIMAKIA</string>
+    <string name="correoTexto">Aukeratu mezu elektroniko bat</string>
+    <string name="formularioBien">Zure eskaera behar bezala biltegiratu da</string>
+    <string name="formularioMal">Errorea gertatu da zure eskaeran. Saiatu berriro geroago.</string>
+    <string name="correoMal">Posta elektronikoa ez da zuzena.</string>
+    <string name="telefonoMal">Telefono-zenbakia ez da zuzena.</string>
+    <string name="camposVacios">Bete nahitaezko eremuak</string>
+    <string name="telefonoObligatorio">Telefono-zenbakia nahitaezkoa da</string>
+    <string name="emailObligatorio">Posta elektronikoa nahitaezkoa da</string>
+    <string name="direccionObligatoria">Helbidea nahitaezkoa da</string>
+    <string name="apellidoObligatorio">Abizena nahitaezkoa da</string>
+    <string name="nombreObligatorio">Izena nahitaezkoa da</string>
 
 </resources>

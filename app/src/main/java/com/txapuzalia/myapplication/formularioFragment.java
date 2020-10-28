@@ -72,7 +72,8 @@ public class formularioFragment extends Fragment {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (!hasFocus) {
-                    editName.setHint("El Nombre es obligatorio");
+                    String nombreObligatorio = getString(R.string.nombreObligatorio);
+                    editName.setHint(nombreObligatorio);
 
                 }
             }
@@ -82,7 +83,8 @@ public class formularioFragment extends Fragment {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (!hasFocus) {
-                    editSurName.setHint("El Apellido es obligatorio");
+                    String apellidoObligatorio = getString(R.string.apellidoObligatorio);
+                    editSurName.setHint(apellidoObligatorio);
                 }
             }
         });
@@ -91,7 +93,8 @@ public class formularioFragment extends Fragment {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (!hasFocus) {
-                    editDireccion.setHint("La dirección es obligatorio");
+                    String direccionObligatoria = getString(R.string.direccionObligatoria);
+                    editDireccion.setHint(direccionObligatoria);
                 }
             }
         });
@@ -99,7 +102,8 @@ public class formularioFragment extends Fragment {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (!hasFocus) {
-                    editEmail.setHint("El correo electrónico es obligatorio");
+                    String emailObligatorio = getString(R.string.emailObligatorio);
+                    editEmail.setHint(emailObligatorio);
                 }
             }
         });
@@ -108,7 +112,8 @@ public class formularioFragment extends Fragment {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
                 if (!hasFocus) {
-                    editPhone.setHint("El número de teléfono es obligatorio");
+                    String telefonoObligatorio = getString(R.string.telefonoObligatorio);
+                    editPhone.setHint(telefonoObligatorio);
                 }
             }
         });
@@ -119,7 +124,8 @@ public class formularioFragment extends Fragment {
                 if (editName.getText().toString().isEmpty() || editSurName.getText().toString().isEmpty() ||
                         editDireccion.getText().toString().isEmpty() || editEmail.getText().toString().isEmpty() ||
                         editPhone.getText().toString().isEmpty()) {
-                    Toast.makeText(getActivity().getApplicationContext(), "Rellene los campos obligatorios", Toast.LENGTH_SHORT).show();
+                    String camposVacios = getString(R.string.camposVacios);
+                    Toast.makeText(getActivity().getApplicationContext(), camposVacios, Toast.LENGTH_SHORT).show();
 
                 } else {
                     if (comprobarDatos()) {
@@ -142,11 +148,13 @@ public class formularioFragment extends Fragment {
 
         String emailInput = editEmail.getText().toString().trim();
         if (!Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
-            Toast.makeText(getActivity().getApplicationContext(), "El correo electrónico es incorrecto.", Toast.LENGTH_SHORT).show();
+            String correoMal = this.getString(R.string.correoMal);
+            Toast.makeText(getActivity().getApplicationContext(), correoMal, Toast.LENGTH_SHORT).show();
             return false;
         } else {
             if (editPhone.getText().toString().trim().length() < 9) {
-                Toast.makeText(getActivity().getApplicationContext(), "El número de teléfono es incorrecto.", Toast.LENGTH_SHORT).show();
+                String telefonoMal = this.getString(R.string.telefonoMal);
+                Toast.makeText(getActivity().getApplicationContext(), telefonoMal , Toast.LENGTH_SHORT).show();
                 return false;
             }
 
@@ -155,6 +163,7 @@ public class formularioFragment extends Fragment {
         return true;
     }
 
+    @SuppressLint("StaticFieldLeak")
     public class MiThread extends AsyncTask<Integer, Integer, Integer> {
         private ProgressDialog progreso;
 
@@ -162,7 +171,7 @@ public class formularioFragment extends Fragment {
         protected void onPreExecute(){
             progreso = new ProgressDialog(getActivity());
             progreso.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
-            progreso.setMessage("Tramitando solicitud. ESPERE...");
+            progreso.setMessage("Tramitando solicitud. ESPERE.../Eskabidea izapidetzen. Itxaron...");
             progreso.setCancelable(false);
             progreso.setMax(100);
             progreso.setProgress(0);

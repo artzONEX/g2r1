@@ -46,9 +46,11 @@ public class homeFragment extends Fragment {
             boolean toastFormulario = datosRecuperados.getBoolean("tForm");
             // -- EN CASO DE QUE SE HAYA INSERTADO LA INFORMACIÓN EN LA BASE DE DATOS, ENSEÑARÁ UN MENSAJE EN EL QUE SE DICE QUE SE HA INSERTADO EN LA BASE DE DATOS --
             if (toastFormulario){
-                Toast.makeText(getActivity(),"Su solicitud se ha almacenado correctamente",Toast.LENGTH_LONG).show();
+                String formularioBien = this.getString(R.string.formularioBien);
+               Toast.makeText(getActivity(),formularioBien,Toast.LENGTH_LONG).show();
             }else{
-                Toast.makeText(getActivity(),"Ha habido un error con su solicitud. Vuelva a intentarlo mas tarde.",Toast.LENGTH_LONG).show();
+                String formularioMal = this.getString(R.string.formularioMal);
+                Toast.makeText(getActivity(),formularioMal,Toast.LENGTH_LONG).show();
             }
         }
 

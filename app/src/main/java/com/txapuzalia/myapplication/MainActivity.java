@@ -73,9 +73,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.navigation_correo:
                 Intent in = new Intent(Intent.ACTION_SEND);
                 in.putExtra(Intent.EXTRA_EMAIL, new String[] { "txapuzalia@gmail.com" });
-                in.putExtra(Intent.EXTRA_SUBJECT, "Duda/Queja");
+                in.putExtra(Intent.EXTRA_SUBJECT, "Duda/Queja-Zalantza/Kexa");
                 in.setType("message/rfc822");
-                startActivity(Intent.createChooser(in, "Escoja un correo"));
+                String correoTexto = String.format(this.getString(R.string.correoTexto));
+                startActivity(Intent.createChooser(in, correoTexto));
                 break;
             case R.id.navigation_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new homeFragment()).commit();
