@@ -26,6 +26,18 @@
             android:orientation="vertical">
 
 
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_marginTop="20sp"
+                android:layout_width="250sp"
+                android:layout_height="15sp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo"
+                android:contentDescription="@string/todo" />
+
+
+
             <!-- TÍTULO DEL FORMULARIO -->
             <TextView
                 android:id="@+id/textView"
@@ -33,8 +45,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:gravity="center"
+                android:textStyle="bold"
                 android:text="@string/tittle"
                 android:textSize="25sp" />
+
+
+
+
+
 
 
             <!-- INPUT TELÉFONO -->
@@ -179,7 +197,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="OPCION ELEGIDA:"
+                android:text="@string/opcion_elegida"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -231,7 +249,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="5sp"
                 android:background="@color/colorAccent"
-                android:text="ENVIAR"
+                android:text="@string/enviar"
                 android:textColor="@color/Fondo"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
