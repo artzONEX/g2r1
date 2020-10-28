@@ -19,5 +19,8 @@
     <style name="miToolbar" parent="AppTheme">
         <item name="android:background">@color/colorPrimary</item>
     </style>
+    <style name="Idflecha">
+        <item name="android:src">@drawable/flechax</item>
+    </style>
 
 </resources>

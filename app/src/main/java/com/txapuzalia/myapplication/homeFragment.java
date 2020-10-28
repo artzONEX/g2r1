@@ -281,6 +281,9 @@ public class homeFragment extends Fragment {
         Timer timer = new Timer();
         timer.scheduleAtFixedRate(new TimerTask() {
             public void run() {
+
+                if(getActivity() == null)
+                    return;
                 getActivity().runOnUiThread(new Runnable() {
                     public void run() {
                         imageSwitcher.setImageResource(galeria[posicion]);

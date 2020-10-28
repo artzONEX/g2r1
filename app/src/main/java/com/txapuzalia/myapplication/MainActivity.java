@@ -52,15 +52,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                     //ModoOscuro();
 
-                    Toast.makeText(getApplicationContext(), "Modo Oscuro Activado.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Activando Modo Oscuro", Toast.LENGTH_SHORT).show();
 
                     SharedPreferences MiPreferences = getSharedPreferences("guardado", Context.MODE_PRIVATE);
                     String texto = "Oscuro";
-                    Toast.makeText(getApplicationContext(), "QQQQQQQQQQQQQQ.", Toast.LENGTH_SHORT).show();
+
                     textViewModo.setText(texto);
 
 
-                    Toast.makeText(getApplicationContext(), "AAAAAAA.", Toast.LENGTH_SHORT).show();
+
 
                     SharedPreferences.Editor editor = MiPreferences.edit();
                     editor.putString("text", texto);
@@ -69,31 +69,34 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
                    /* getDelegate().setLocalNightMode(
-                            AppCompatDelegate.MODE_NIGHT_YES);
-                    /*
-                    AppCompatDelegate
+                            AppCompatDelegate.MODE_NIGHT_YES);*/
+
+                    /*AppCompatDelegate
                             .setDefaultNightMode(
                                     AppCompatDelegate
-                                            .MODE_NIGHT_YES);
+                                            .MODE_NIGHT_YES);*/
 
-                    */
+
+                    ModoOscuro();
+
+
 
                     //ModoClaro();
 
                     editor.apply();
                 }
                 else if(!switch1.isChecked()) {
-                    //ModoClaro();
 
 
-                    Toast.makeText(getApplicationContext(), "Modo Claro Activado.", Toast.LENGTH_SHORT).show();
+
+                    Toast.makeText(getApplicationContext(), "Activando Modo Claro", Toast.LENGTH_SHORT).show();
 
                     SharedPreferences MiPreferences = getSharedPreferences("guardado", Context.MODE_PRIVATE);
                     String texto = "Claro";
 
-                    Toast.makeText(getApplicationContext(), "CCCCCCCCCCCCCCC.", Toast.LENGTH_SHORT).show();
+
                     textViewModo.setText(texto);
-                    Toast.makeText(getApplicationContext(), "TTTTTTTTTTTTTTT.", Toast.LENGTH_SHORT).show();
+
                     SharedPreferences.Editor editor = MiPreferences.edit();
                     editor.putString("text", texto);
 
@@ -105,9 +108,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                     /*AppCompatDelegate
                             .setDefaultNightMode(
                                     AppCompatDelegate
-                                            .MODE_NIGHT_NO);
+                                            .MODE_NIGHT_NO);*/
 
-                     */
+                    ModoClaro();
+
+
 
 
                     //ModoOscuro();
@@ -121,7 +126,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         toolbar=findViewById(R.id.main_toolbar);
         //toolbar.setTitleTextColor(Color.WHITE);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
 
         NavigationView navigationView = findViewById(R.id.navigation_informacion);
         navigationView.setNavigationItemSelectedListener(this);
@@ -149,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
-    public void cargarPreferencias() {
+    /*public void cargarPreferencias() {
         SharedPreferences MiPreferences = getSharedPreferences("guardado", Context.MODE_PRIVATE);
         String text = MiPreferences.getString("text","Ninguno");
 
@@ -162,69 +167,69 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
        if(textViewModo.getText().equals(textoC)){
 
 
-            //ModoClaro();
+           ModoClaro();
 
 
            switch1.isChecked();
-            /*AppCompatDelegate
+            AppCompatDelegate
                     .setDefaultNightMode(
                             AppCompatDelegate
                                     .MODE_NIGHT_NO);
 
-        */
-           /*
-           return  AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+
+           /*return  AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
             getApplicationContext().setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
            return  ((AppCompatActivity)getActivity()).getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-            */
+
 
         }else if(textViewModo.getText().equals(textoO)){
 
 
-            //ModoOscuro();
+            ModoOscuro();
 
             switch1.toggle();
 
 
-           /*AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);*/
+           AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
 
-            /*AppCompatDelegate
+            AppCompatDelegate
                     .setDefaultNightMode(
                             AppCompatDelegate
                                     .MODE_NIGHT_YES);
-            ((AppCompatActivity)getActivity()).getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
-            */
+            /*((AppCompatActivity)getActivity()).getDelegate().setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
 
         }else if(!switch1.isChecked()) {
-            //ModoClaro();
+            ModoClaro();
         }
     }
 
     private void ModoOscuro() {
 
 
-       /* AppCompatDelegate
+       AppCompatDelegate
                 .setDefaultNightMode(
                         AppCompatDelegate
-                                .MODE_NIGHT_YES);*/
+                                .MODE_NIGHT_YES);
         /*getDelegate().setLocalNightMode(
                 AppCompatDelegate.MODE_NIGHT_YES);
 
-        recreate();*//*
+        recreate();*
     }
 
     public void ModoClaro() {
-       /*AppCompatDelegate
+       AppCompatDelegate
                 .setDefaultNightMode(
                         AppCompatDelegate
-                                .MODE_NIGHT_NO);*/
+                                .MODE_NIGHT_NO);
 
-        /*getDelegate().setLocalNightMode(
+        getDelegate().setLocalNightMode(
                 AppCompatDelegate.MODE_NIGHT_NO);
 
-        recreate();*/
-    }
+        recreate();
+    }*/
 
 
     @Override
@@ -272,7 +277,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
-    /*private void cargarPreferencias(){
+    private void cargarPreferencias(){
         SharedPreferences MiPreferences = getSharedPreferences("guardado", Context.MODE_PRIVATE);
         String text = MiPreferences.getString("text","Ninguno");
 
@@ -314,5 +319,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 .setDefaultNightMode(
                         AppCompatDelegate
                                 .MODE_NIGHT_NO);
-    }*/
+    }
 }
