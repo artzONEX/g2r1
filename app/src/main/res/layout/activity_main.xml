@@ -31,7 +31,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/main_toolbar"
                 style="@style/miToolbar"
-                android:layout_width="276dp"
+                android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 app:titleTextColor="@color/Fondo" />
 

@@ -27,7 +27,8 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="0sp"
                 android:layout_marginBottom="0sp"
-                app:srcCompat="@drawable/logoBien" />
+                app:srcCompat="@drawable/logobien"
+                android:contentDescription="@string/todo" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -649,7 +650,7 @@
                             android:layout_weight="1"
                             android:gravity="center"
                             android:orientation="horizontal"
-                            >
+                            tools:ignore="TooManyViews">
 
 
                             <TextView
