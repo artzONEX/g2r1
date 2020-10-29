@@ -285,7 +285,8 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="start"
                     android:layout_weight="1"
-                    tools:ignore="InOrMmUsage">
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="@color/fondo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -307,9 +308,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_gravity="start"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             android:layout_weight="1"
                             android:gravity="center|start"
+                            android:textColor="@color/texto"
                             android:text="@string/email"
                             tools:ignore="SmallSp" />
                     </LinearLayout>
@@ -346,9 +348,10 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="start"
                             android:layout_weight="1"
-                            android:gravity="start|center_vertical"
+                            android:gravity="center|start"
+                            android:textColor="@color/texto"
                             android:text="@string/phone"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             tools:ignore="SmallSp" />
                     </LinearLayout>
 
@@ -386,9 +389,10 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:gravity="center"
+                            android:textColor="@color/texto"
+                            android:gravity="center|start"
                             android:text="@string/telFijo"
-                            android:textSize="10sp"
+                            android:textSize="8sp"
                             tools:ignore="SmallSp" />
                     </LinearLayout>
 

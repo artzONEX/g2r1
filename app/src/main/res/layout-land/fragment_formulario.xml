@@ -282,7 +282,8 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="start"
                     android:layout_weight="1"
-                    tools:ignore="InOrMmUsage">
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="@color/fondo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -306,6 +307,7 @@
                             android:layout_gravity="start"
                             android:layout_weight="1"
                             android:gravity="center|start"
+                            android:textColor="@color/texto"
                             android:text="@string/email" />
                     </LinearLayout>
 
@@ -315,10 +317,10 @@
                     android:id="@+id/navigation_telefonoMovil"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_gravity="center"
-                    tools:ignore="InOrMmUsage"
-                    app:cardBackgroundColor="@color/fondo">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/fondo"
+                    tools:ignore="InOrMmUsage">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -341,8 +343,9 @@
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
                             android:layout_weight="1"
-                            android:gravity="center"
-                            android:text="@string/phone" />
+                            android:gravity="center|start"
+                            android:text="@string/phone"
+                            android:textColor="@color/texto" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -351,11 +354,11 @@
                     android:id="@+id/navigation_telefonoFijo"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
                     android:layout_gravity="end"
                     android:layout_marginEnd="15sp"
-                    tools:ignore="InOrMmUsage"
-                    app:cardBackgroundColor="@color/fondo">
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="@color/fondo"
+                    tools:ignore="InOrMmUsage">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -377,10 +380,11 @@
                             android:id="@+id/textView5"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_weight="1"
                             android:layout_gravity="center"
-                            android:gravity="center"
-                            android:text="@string/telFijo" />
+                            android:layout_weight="1"
+                            android:gravity="center|start"
+                            android:text="@string/telFijo"
+                            android:textColor="@color/texto" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>

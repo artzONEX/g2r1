@@ -27,9 +27,10 @@
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="match_parent"
-                android:layout_height="111dp"
+                android:layout_height="165dp"
+                android:layout_gravity="center"
                 android:contentDescription="@string/foto"
-                android:src="@drawable/logobien2"
+                android:src="@drawable/logobien4"
                 tools:ignore="MissingConstraints"
                 tools:srcCompat="@tools:sample/avatars" />
 
