@@ -2,7 +2,6 @@ package com.txapuzalia.myapplication;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -61,21 +60,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (Item.getItemId())
         {
             case R.id.navigation_telefonoFijo:
-                Intent inte = new Intent(Intent.ACTION_DIAL);
-                inte.setData(Uri.parse("tel:" + getString(R.string.numeroFij)));
-                startActivity(inte);
-                break;
-            case R.id.navigation_telefonoMovil:
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:" + getString(R.string.numeroTel)));
+                String numeroFijo= getString(R.string.numeroFij);
+                intent=contactanos.FUNCION_FIJO(numeroFijo, intent);
                 startActivity(intent);
                 break;
+            case R.id.navigation_telefonoMovil:
+                Intent inPhone = new Intent(Intent.ACTION_DIAL);
+               String numeroMovil = getString(R.string.numeroTel);
+                inPhone=contactanos.FUNCION_MOVIL(numeroMovil, inPhone);
+                startActivity(inPhone);
+                break;
             case R.id.navigation_correo:
-                Intent in = new Intent(Intent.ACTION_SEND);
-                in.putExtra(Intent.EXTRA_EMAIL, new String[] { "txapuzalia@gmail.com" });
-                in.putExtra(Intent.EXTRA_SUBJECT, "Duda/Queja");
-                in.setType("message/rfc822");
-                startActivity(Intent.createChooser(in, "Escoja un correo"));
+                Intent inCorreo= new Intent(Intent.ACTION_SEND);
+                inCorreo=contactanos.FUNCION_CORREO(inCorreo);
+                startActivity(Intent.createChooser(inCorreo, "Escoja un correo"));
                 break;
             case R.id.navigation_home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new homeFragment()).commit();
@@ -250,5 +249,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
     public void openDrawer() {
+    }
+    public static void FUNCION_TELEFONO(){
+
     }
 }

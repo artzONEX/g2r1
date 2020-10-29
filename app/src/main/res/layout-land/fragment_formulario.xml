@@ -23,7 +23,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
 
 
 
@@ -256,19 +257,18 @@
                 android:layout_marginBottom="25sp"
                 app:layout_constraintTop_toBottomOf="@+id/etComments" />
 
-            <com.google.android.material.bottomnavigation.BottomNavigationView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#FFFF"
-                android:layout_gravity="center"
-                >
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/navigation_correo"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="start"
-                    android:layout_marginStart="15sp"
+                    android:layout_weight="1"
                     tools:ignore="InOrMmUsage">
 
                     <LinearLayout
@@ -279,17 +279,19 @@
 
                         <ImageView
                             android:id="@+id/imageView3"
-                            android:layout_width="25sp"
-                            android:layout_height="25sp"
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
                             android:layout_gravity="center"
+                            android:layout_weight="1"
                             android:contentDescription="@string/todo"
                             app:srcCompat="@drawable/correo" />
 
                         <TextView
                             android:id="@+id/textView3"
-                            android:layout_width="155dp"
-                            android:layout_height="50dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_gravity="start"
+                            android:layout_weight="1"
                             android:gravity="center|start"
                             android:text="@string/email" />
                     </LinearLayout>
@@ -300,6 +302,7 @@
                     android:id="@+id/navigation_telefonoMovil"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:layout_gravity="center"
                     tools:ignore="InOrMmUsage">
 
@@ -311,17 +314,19 @@
 
                         <ImageView
                             android:id="@+id/imageView4"
-                            android:layout_width="25sp"
-                            android:layout_height="25sp"
+                            android:layout_width="50sp"
+                            android:layout_height="50sp"
                             android:layout_gravity="center"
+                            android:layout_weight="1"
                             android:contentDescription="@string/todo"
                             app:srcCompat="@drawable/telefono" />
 
                         <TextView
                             android:id="@+id/textView4"
                             android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:layout_gravity="center"
+                            android:layout_weight="1"
                             android:gravity="center"
                             android:text="@string/phone" />
                     </LinearLayout>
@@ -332,6 +337,7 @@
                     android:id="@+id/navigation_telefonoFijo"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:layout_gravity="end"
                     android:layout_marginEnd="15sp"
                     tools:ignore="InOrMmUsage">
@@ -342,26 +348,28 @@
                         android:orientation="horizontal"
                         tools:ignore="UseCompoundDrawables">
 
+
                         <ImageView
                             android:id="@+id/imageView5"
-                            android:layout_width="25sp"
+                            android:layout_width="100sp"
                             android:layout_height="50sp"
                             android:layout_gravity="center"
+                            android:layout_weight="1"
                             android:contentDescription="@string/todo"
                             app:srcCompat="@drawable/telefono_fijo" />
 
                         <TextView
                             android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="50dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
                             android:layout_gravity="center"
                             android:gravity="center"
                             android:text="@string/telFijo" />
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
-            </com.google.android.material.bottomnavigation.BottomNavigationView>
-
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
