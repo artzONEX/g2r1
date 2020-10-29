@@ -8,4 +8,9 @@
     <color name="LetraFontaneria">#009EDC</color>
     <color name="LetraPintura">#00FFA6</color>
     <color name="LetraOtros">#000000</color>
+
+    <!--Modo DIA estilos-->
+    <color name="texto">#757575</color>
+    <color name="CardColor">#FFFFFF</color>
+    <color name="fondo">#F1F0F0</color>
 </resources>

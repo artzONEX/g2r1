@@ -1,16 +1,22 @@
 package com.txapuzalia.myapplication;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CompoundButton;
+import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -23,14 +29,102 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private static DrawerLayout dl;
 
 
+    private TextView textViewModo;
+    public Switch switch1;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        textViewModo = findViewById(R.id.textViewModo);
+        switch1 = findViewById(R.id.switch1);
+        cargarPreferencias();
+
+        switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(switch1.isChecked()) {
+
+                    //ModoOscuro();
+
+                    Toast.makeText(getApplicationContext(), "Activando Modo Oscuro", Toast.LENGTH_SHORT).show();
+
+                    SharedPreferences MiPreferences = getSharedPreferences("guardado", Context.MODE_PRIVATE);
+                    String texto = "Oscuro";
+
+                    textViewModo.setText(texto);
+
+
+
+
+                    SharedPreferences.Editor editor = MiPreferences.edit();
+                    editor.putString("text", texto);
+
+
+
+
+                   /* getDelegate().setLocalNightMode(
+                            AppCompatDelegate.MODE_NIGHT_YES);*/
+
+                    /*AppCompatDelegate
+                            .setDefaultNightMode(
+                                    AppCompatDelegate
+                                            .MODE_NIGHT_YES);*/
+
+
+                    ModoOscuro();
+
+
+
+                    //ModoClaro();
+
+                    editor.apply();
+                }
+                else if(!switch1.isChecked()) {
+
+
+
+                    Toast.makeText(getApplicationContext(), "Activando Modo Claro", Toast.LENGTH_SHORT).show();
+
+                    SharedPreferences MiPreferences = getSharedPreferences("guardado", Context.MODE_PRIVATE);
+                    String texto = "Claro";
+
+
+                    textViewModo.setText(texto);
+
+                    SharedPreferences.Editor editor = MiPreferences.edit();
+                    editor.putString("text", texto);
+
+                    /*getDelegate().setLocalNightMode(
+                            AppCompatDelegate.MODE_NIGHT_NO);*/
+
+
+
+                    /*AppCompatDelegate
+                            .setDefaultNightMode(
+                                    AppCompatDelegate
+                                            .MODE_NIGHT_NO);*/
+
+                    ModoClaro();
+
+
+
+
+                    //ModoOscuro();
+
+                    editor.apply();
+
+
+                }
+            }
+        });
+
         Toolbar toolbar = findViewById(R.id.main_toolbar);
         //toolbar.setTitleTextColor(Color.WHITE);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
 
         dl= findViewById(R.id.drawer_layout);
         NavigationView nv = findViewById(R.id.navigation_informacion);
@@ -53,6 +147,50 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             nv.setCheckedItem(R.id.navigation_home);
         }
 
+    }
+
+    private void cargarPreferencias(){
+        SharedPreferences MiPreferences = getSharedPreferences("guardado", Context.MODE_PRIVATE);
+        String text = MiPreferences.getString("text","Ninguno");
+
+        textViewModo.setText(text);
+
+        String textoC = "Claro";
+        String textoO = "Oscuro";
+
+
+        if(textViewModo.getText().equals(textoC)){
+
+
+            ModoClaro();
+
+            switch1.isChecked();
+
+        }else if(textViewModo.getText().equals(textoO)){
+
+
+            ModoOscuro();
+
+            switch1.toggle();
+
+        }else if(!switch1.isChecked()) {
+            ModoClaro();
+        }
+
+    }
+
+    private void ModoOscuro() {
+        AppCompatDelegate
+                .setDefaultNightMode(
+                        AppCompatDelegate
+                                .MODE_NIGHT_YES);
+    }
+
+    private void ModoClaro() {
+        AppCompatDelegate
+                .setDefaultNightMode(
+                        AppCompatDelegate
+                                .MODE_NIGHT_NO);
     }
 
 
