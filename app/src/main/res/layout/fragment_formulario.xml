@@ -276,7 +276,7 @@
             <com.google.android.material.bottomnavigation.BottomNavigationView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/Fondo"
+                android:background="@color/fondo"
                 android:layout_gravity="center"
                 >
 
@@ -285,7 +285,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="start"
-                    tools:ignore="InOrMmUsage">
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="@color/fondo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -318,7 +319,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
-                    tools:ignore="InOrMmUsage">
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="@color/fondo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -352,7 +354,8 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="end"
                     android:layout_marginEnd="15sp"
-                    tools:ignore="InOrMmUsage">
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="@color/fondo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
