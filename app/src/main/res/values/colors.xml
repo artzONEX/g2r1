@@ -7,7 +7,7 @@
     <color name="LetraCarpinteria">#fdb501</color>
     <color name="LetraFontaneria">#009EDC</color>
     <color name="LetraPintura">#00FFA6</color>
-    <color name="LetraOtros">#000000</color>
+    <color name="LetraOtros">#F1F0F0</color>
 
     <!--Modo DIA estilos-->
     <color name="texto">#757575</color>
