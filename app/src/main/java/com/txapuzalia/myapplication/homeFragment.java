@@ -59,7 +59,7 @@ public class homeFragment extends Fragment {
     private DrawerLayout dl;
     private NavigationView nv;
 
-    String URL1="https://ia601500.us.archive.org/31/items/flecha_20201022/flecha.png";
+   // String URL1="https://ia601500.us.archive.org/31/items/flecha_20201022/flecha.png";
 
     @SuppressLint("CutPasteId")
     @Nullable
@@ -148,18 +148,18 @@ public class homeFragment extends Fragment {
 
 
 
-        Picasso.get()
+       /* Picasso.get()
                 .load(URL1)
 
                 .into(flecha);
                 //.placeholder(R.drawable.flecha)
               //  .error(R.drawable.flecha)
-        ;
+        ;*/
 
 
 
-        Picasso.get()
-                .load(URL1)
+       /* Picasso.get()
+                //.load(URL1)
                 .into(new Target() {
                     @Override
                     public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
@@ -194,7 +194,7 @@ public class homeFragment extends Fragment {
                     }
 
 
-                });
+                });*/
 
 
 
