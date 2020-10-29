@@ -66,18 +66,18 @@
 
                             <!-- NOMBRE DE LA TAREA -->
                             <TextView
-                                android:id="@+id/otros1Text"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonOtros1"
                                 android:textColor="@color/LetraOtros"
-                                android:textSize="22sp" />
+                                android:textSize="22sp"
+                                android:id="@+id/otros1Text"/>
 
 
                             <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
-                                android:layout_width="match_parent"
+                                android:layout_width="199dp"
                                 android:layout_height="81dp"
                                 android:text="@string/otros1Desc"/>
 
@@ -157,25 +157,25 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="392dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
 
                             <!-- NOMBRE DE LA TAREA -->
                             <TextView
-                                android:id="@+id/otros2Text"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonOtros2"
                                 android:textColor="@color/LetraOtros"
-                                android:textSize="24sp" />
+                                android:textSize="24sp"
+                                android:id="@+id/otros2Text"/>
 
 
                             <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
-                                android:layout_width="match_parent"
+                                android:layout_width="199dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/otros2Desc" />
 
@@ -255,25 +255,25 @@
                         android:orientation="horizontal">
 
                         <LinearLayout
-                            android:layout_width="392dp"
+                            android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
 
                             <!-- NOMBRE DE LA TAREA -->
                             <TextView
-                                android:id="@+id/otros3Text"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
+                                android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
                                 android:text="@string/botonOtros3"
                                 android:textColor="@color/LetraOtros"
-                                android:textSize="24sp" />
+                                android:textSize="24sp"
+                                android:id="@+id/otros3Text"/>
 
 
                             <!-- DESCRIPCIÓN DE LA TAREA -->
                             <TextView
-                                android:layout_width="match_parent"
+                                android:layout_width="199dp"
                                 android:layout_height="match_parent"
                                 android:text="@string/otros3Desc" />
 
