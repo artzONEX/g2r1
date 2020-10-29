@@ -116,10 +116,8 @@
     <string name="apellidoObligatorio">El Apellido es obligatorio</string>
     <string name="nombreObligatorio">El Nombre es obligatorio</string>
     <string name="image_from_url" translatable="false">image_from_url</string>
-
-
-
-
+    <string name="modo" translatable="false">Modo</string>
+    <string name="Mode">Modo</string>
 
 
 </resources>

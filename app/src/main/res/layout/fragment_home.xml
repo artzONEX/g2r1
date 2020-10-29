@@ -33,7 +33,7 @@
                 android:layout_width="404dp"
                 android:layout_height="333dp"
                 android:layout_marginTop="150dp"
-                android:src="@drawable/logobien"
+                android:src="@drawable/logo"
                 tools:ignore="MissingConstraints"
                 tools:srcCompat="@tools:sample/avatars"
                 android:contentDescription="@string/foto" />

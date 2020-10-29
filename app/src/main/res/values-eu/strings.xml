@@ -109,7 +109,7 @@
     <string name="direccionObligatoria">Helbidea nahitaezkoa da</string>
     <string name="apellidoObligatorio">Abizena nahitaezkoa da</string>
     <string name="nombreObligatorio">Izena nahitaezkoa da</string>
-
+    <string name="Mode">Modu</string>
 
 
 </resources>
