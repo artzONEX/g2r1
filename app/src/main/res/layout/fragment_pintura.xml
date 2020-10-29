@@ -82,7 +82,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1"
+                                android:src="@drawable/pint1"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -182,7 +182,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1"
+                                android:src="@drawable/pint2"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -283,7 +283,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1"
+                                android:src="@drawable/pint3"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -382,7 +382,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1"
+                                android:src="@drawable/pint4"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -481,7 +481,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1"
+                                android:src="@drawable/pint5"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 

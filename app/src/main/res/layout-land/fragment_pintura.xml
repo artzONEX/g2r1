@@ -71,7 +71,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
                                 android:contentDescription="@string/foto"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/pint1" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -162,7 +162,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
                                 android:contentDescription="@string/foto"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/pint2" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -254,7 +254,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
                                 android:contentDescription="@string/foto"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/pint3" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -344,7 +344,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
                                 android:contentDescription="@string/foto"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/pint4" />
                         </RelativeLayout>
 
                     </LinearLayout>
@@ -434,7 +434,7 @@
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
                                 android:contentDescription="@string/foto"
-                                android:src="@drawable/food1" />
+                                android:src="@drawable/pint5" />
                         </RelativeLayout>
 
                     </LinearLayout>
