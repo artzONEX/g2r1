@@ -7,8 +7,7 @@
     <string name="pintura">Pintura</string>
     <string name="otros">Beste batzuk</string>
 
-    <string name="image_from_url">Imagen flecha desliza</string>
-    <string name="descripcion">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
+    <string name="descripcion">Txapuzapp etxeko akatsak konpontzeko gure zerbitzuak erosteko aplikazio bat da</string>
     <string name="phone">Telefono</string>
     <string name="telFijo">Telefono finko</string>
     <string name="telMovil">Telefono mugikor</string>
@@ -66,7 +65,7 @@
     <string name="opcion">Aukera</string>
     <string name="btnHome">Formularioa</string>
 
-    <string name="carp1Desc">70 urtetik gorako esperientziaren profesionaltasuna dugu. Galde iezaguzu!</string>
+    <string name="carp1Desc">2 urtetik gorako esperientziaren profesionaltasuna dugu. Galde iezaguzu!</string>
     <string name="carp2Desc">Lixatzea, bernizatzea, argizaria ematea… izango dira altzariaren bizitza berreskuratzeko lanetako batzuk.</string>
     <string name="carp3Desc">Mota guztietako ateak konpontzea, aluminiozkoak, PVCzkoak, zurezkoak, mistoak.</string>
     <string name="carp4Desc">Sukaldeko altzariak konpontzea, garbitzeko altzaria aldatzea, bandak aldatzea, etab.</string>
@@ -99,8 +98,17 @@
     <string name="pint5Desc">Pintura zaharra edo paper pintatua kendu aurretik hormak harraskatzea.</string>
 
     <string name="tittle">BETE INPRIMAKIA</string>
-
-    <string name="todo">DENA</string>
+    <string name="correoTexto">Aukeratu mezu elektroniko bat</string>
+    <string name="formularioBien">Zure eskaera behar bezala biltegiratu da</string>
+    <string name="formularioMal">Errorea gertatu da zure eskaeran. Saiatu berriro geroago.</string>
+    <string name="correoMal">Posta elektronikoa ez da zuzena.</string>
+    <string name="telefonoMal">Telefono-zenbakia ez da zuzena.</string>
+    <string name="camposVacios">Bete nahitaezko eremuak</string>
+    <string name="telefonoObligatorio">Telefono-zenbakia nahitaezkoa da</string>
+    <string name="emailObligatorio">Posta elektronikoa nahitaezkoa da</string>
+    <string name="direccionObligatoria">Helbidea nahitaezkoa da</string>
+    <string name="apellidoObligatorio">Abizena nahitaezkoa da</string>
+    <string name="nombreObligatorio">Izena nahitaezkoa da</string>
 
 
 

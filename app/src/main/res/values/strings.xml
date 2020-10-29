@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">Txapuzapp</string>
+    <string name="app_name" translatable="false">Botchapp</string>
     <string name="carpinteria">Carpinteria</string>
     <string name="fontaneria">Fontaneria</string>
     <string name="electricista">Electricista</string>
@@ -70,7 +70,7 @@
     <string name="opcion">Opción</string>
     <string name="btnHome">Formulario</string>
 
-    <string name="carp1Desc">Contamos con la profesionalidad de más de 70 años de experiencia ¡Consúltanos!</string>
+    <string name="carp1Desc">Contamos con la profesionalidad de más de 2 años de experiencia ¡Consúltanos!</string>
     <string name="carp2Desc">Lijar, barnizar, encerar… serán algunos de los trabajos, para recuperar la vida del mueble.</string>
     <string name="carp3Desc">Reparación te todo tipo de puertas, bien sean en aluminio, pvc, madera, mixtas.</string>
     <string name="carp4Desc">Arreglo de muebles de cocina,sustituir mueble fregadero,cambiar bisagras,etc…</string>
@@ -105,10 +105,20 @@
 
 
     <string name="tittle">RELLENA EL FORMULARIO</string>
-    <string name="image_from_url">image_from_url</string>
+    <string name="correoTexto">Escoja un correo</string>
+    <string name="formularioBien">Su solicitud se ha almacenado correctamente</string>
+    <string name="formularioMal">Ha habido un error con su solicitud. Vuelva a intentarlo mas tarde.</string>
+    <string name="correoMal">El correo electrónico es incorrecto.</string>
+    <string name="telefonoMal">El número de teléfono es incorrecto.</string>
+    <string name="camposVacios">Rellene los campos obligatorios</string>
+    <string name="telefonoObligatorio">El número de teléfono es obligatorio</string>
+    <string name="emailObligatorio">El correo electrónico es obligatorio</string>
+    <string name="direccionObligatoria">La dirección es obligatorio</string>
+    <string name="apellidoObligatorio">El Apellido es obligatorio</string>
+    <string name="nombreObligatorio">El Nombre es obligatorio</string>
+    <string name="image_from_url" translatable="false">image_from_url</string>
 
 
-    <string name="todo">TODO</string>
 
 
 
