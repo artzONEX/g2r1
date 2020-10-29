@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name" >Botchapp</string>
-    <string name="informacion">Informacion</string>
     <string name="carpinteria">Carpinteria</string>
     <string name="fontaneria">Fontaneria</string>
     <string name="electricista">Electricista</string>
@@ -13,7 +12,6 @@
     <string name="Email">txapuzalia@gmail.com</string>
     <string name="home">Home</string>
     <string name="contacto"></string>
-    <string name="descripcion">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
     <string name="phone">Teléfono</string>
     <string name="name">Nombre</string>
     <string name="surname">Apellidos</string>
@@ -37,7 +35,6 @@
     <string name="botonElectr4">Suelos</string>
     <string name="botonElectr5">Sistema de ahorro energetico</string>
     <string name="botonElectr6">Reubicacion electrica</string>
-    <string name="botonElectr7">Otros (Escribir en formulario)</string>
 
     <string name="botonPint1">Interiores</string>
     <string name="botonPint2">Empapelado</string>
@@ -63,5 +60,4 @@
 
     <string name="image_from_url">Imagen flecha desliza</string>
 
-    <string name="Mode">Modo</string>
 </resources>

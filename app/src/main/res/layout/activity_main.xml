@@ -36,6 +36,7 @@
                 app:titleTextColor="@color/Fondo" >
 
 
+
                 <TextView
                     android:id="@+id/textViewModo"
 
@@ -56,15 +57,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="39dp"
                     android:layout_gravity="right"
-                    android:text="Modo  "
+                    android:text="@string/modo"
 
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.461"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/tvExplicacion"
-                    app:layout_constraintVertical_bias="0.977" />
-
+                    app:layout_constraintVertical_bias="0.977"
+                    tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
             </androidx.appcompat.widget.Toolbar>
 
 
