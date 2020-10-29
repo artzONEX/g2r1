@@ -34,7 +34,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="0sp"
                 android:layout_marginBottom="0sp"
-                app:srcCompat="@drawable/logo"
+                app:srcCompat="@drawable/logobien2"
                 android:contentDescription="@string/foto" />
 
 
@@ -45,7 +45,6 @@
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:textStyle="bold"
                 android:gravity="center"
                 android:textColor="@color/texto"
@@ -279,6 +278,7 @@
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/navigation_correo"
                     android:layout_width="wrap_content"
@@ -322,7 +322,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:layout_gravity="center"
-                    tools:ignore="InOrMmUsage">
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="@color/fondo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -360,7 +361,8 @@
                     android:layout_weight="1"
                     android:layout_gravity="end"
                     android:layout_marginEnd="15sp"
-                    tools:ignore="InOrMmUsage">
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="@color/fondo">
 
                     <LinearLayout
                         android:layout_width="match_parent"

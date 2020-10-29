@@ -24,52 +24,59 @@
         </FrameLayout>
 
         <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            style="@style/miToolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            >
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:titleTextColor="@color/Fondo">
 
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/main_toolbar"
-                style="@style/miToolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                app:titleTextColor="@color/Fondo" >
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textColor="@color/Fondo"
+                android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/textViewModo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingEnd="30dip"
+                android:text="@string/Mode"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.648"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.966"
+                tools:ignore="RtlHardcoded,RtlSymmetry" />
 
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_gravity="right"
+                android:text="@string/modo"
 
-                <TextView
-                    android:id="@+id/textViewModo"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvExplicacion"
+                app:layout_constraintVertical_bias="0.977"
+                tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
 
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="right"
-                    android:paddingRight="30dip"
-                    android:text="@string/Mode"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.648"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.966" />
-
-                <Switch
-                    android:id="@+id/switch1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="39dp"
-                    android:layout_gravity="right"
-                    android:text="@string/modo"
-
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.461"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/tvExplicacion"
-                    app:layout_constraintVertical_bias="0.977"
-                    tools:ignore="RtlHardcoded,UseSwitchCompatOrMaterialXml" />
-            </androidx.appcompat.widget.Toolbar>
-
-
-        </com.google.android.material.appbar.AppBarLayout>
+        </androidx.appcompat.widget.Toolbar>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
@@ -78,7 +85,11 @@
         android:layout_height="match_parent"
         app:menu="@menu/navigation_menu"
         android:id="@+id/navigation_informacion"
+        android:background="@color/fondo"
+        app:itemTextColor="@color/texto"
         android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header_layout"/>
+        app:headerLayout="@layout/nav_header_layout"
+
+        android:theme="@style/ItemColorMenu"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

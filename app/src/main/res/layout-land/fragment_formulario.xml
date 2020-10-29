@@ -27,19 +27,16 @@
             android:orientation="vertical">
 
 
-
+            <!-- TÍTULO DEL FORMULARIO -->
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_marginTop="20sp"
-                android:layout_width="250sp"
-                android:layout_height="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/logo"
-                android:contentDescription="@string/foto" />
+                android:layout_marginTop="20sp"
+                android:contentDescription="@string/foto"
+                app:srcCompat="@drawable/logobien2" />
 
-
-
-            <!-- TÍTULO DEL FORMULARIO -->
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
@@ -278,6 +275,7 @@
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
+
                 <androidx.cardview.widget.CardView
                     android:id="@+id/navigation_correo"
                     android:layout_width="wrap_content"
@@ -319,7 +317,8 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:layout_gravity="center"
-                    tools:ignore="InOrMmUsage">
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="@color/fondo">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -355,7 +354,8 @@
                     android:layout_weight="1"
                     android:layout_gravity="end"
                     android:layout_marginEnd="15sp"
-                    tools:ignore="InOrMmUsage">
+                    tools:ignore="InOrMmUsage"
+                    app:cardBackgroundColor="@color/fondo">
 
                     <LinearLayout
                         android:layout_width="match_parent"

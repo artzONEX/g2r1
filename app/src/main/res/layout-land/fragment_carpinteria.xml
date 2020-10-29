@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
-                app:srcCompat="@drawable/logo"
+                app:srcCompat="@drawable/logobien2"
                 android:contentDescription="@string/foto" />
 
             <androidx.cardview.widget.CardView

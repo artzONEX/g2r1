@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/Fondo"
+    android:background="@color/fondo"
     >
     <ScrollView
         android:id="@+id/scrollView2"
@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="111dp"
                 android:contentDescription="@string/foto"
-                android:src="@drawable/logo"
+                android:src="@drawable/logobien2"
                 tools:ignore="MissingConstraints"
                 tools:srcCompat="@tools:sample/avatars" />
 
@@ -100,7 +100,9 @@
                 android:layout_marginRight="75dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="50dp"
-                android:text="@string/btnHome" />
+                android:text="@string/btnHome"
+                android:background="@color/colorAccent"
+                android:textColor="@color/Fondo"/>
 
 
         </LinearLayout>
