@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="111dp"
                 android:contentDescription="@string/foto"
-                android:src="@drawable/logo"
+                android:src="@drawable/logobien2"
                 tools:ignore="MissingConstraints"
                 tools:srcCompat="@tools:sample/avatars" />
 

@@ -30,10 +30,9 @@
             <!-- IMAGEN DEL LOGO -->
             <ImageView
                 android:id="@+id/logo"
-                android:layout_width="404dp"
-                android:layout_height="333dp"
-                android:layout_marginTop="150dp"
-                android:src="@drawable/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logobien4"
                 tools:ignore="MissingConstraints"
                 tools:srcCompat="@tools:sample/avatars"
                 android:contentDescription="@string/foto" />
