@@ -11,7 +11,7 @@
     <string name="numero">689345621</string>
     <string name="Email">txapuzalia@gmail.com</string>
     <string name="home">Home</string>
-    <string name="contacto"></string>
+    <string name="contacto" />
     <string name="phone">Teléfono</string>
     <string name="name">Nombre</string>
     <string name="surname">Apellidos</string>
@@ -59,5 +59,7 @@
     <string name="descripcion2">Batchapp es una aplicación que sirve para comprar nuestros servicios para arreglar los imperfectos de su casa</string>
 
     <string name="image_from_url">Imagen flecha desliza</string>
+
+
 
 </resources>

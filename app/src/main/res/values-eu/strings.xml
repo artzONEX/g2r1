@@ -110,6 +110,8 @@
     <string name="apellidoObligatorio">Abizena nahitaezkoa da</string>
     <string name="nombreObligatorio">Izena nahitaezkoa da</string>
     <string name="Mode">Modu</string>
+    <string name="modoOn">Modu iluna aktibatzen</string>
+    <string name="modoOff">Argi modua aktibatzen</string>
 
 
 </resources>
