@@ -19,6 +19,15 @@
             android:orientation="vertical"
             android:padding="24dp">
 
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_marginTop="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/logo"
+                android:contentDescription="@string/todo" />
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -163,7 +172,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec2"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -255,7 +264,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec3"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -347,7 +356,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec4"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -438,7 +447,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec5"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -529,7 +538,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/electricista"
+                                android:src="@drawable/elec3"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 

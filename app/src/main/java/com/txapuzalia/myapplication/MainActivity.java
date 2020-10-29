@@ -20,7 +20,8 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private DrawerLayout dl;
+    private static DrawerLayout dl;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -248,5 +249,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, cf).commit();
 
     }
+
+    public static void botonInicio(){
+        dl.openDrawer(GravityCompat.START);
+    }
+
 
 }

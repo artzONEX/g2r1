@@ -116,5 +116,12 @@
     <string name="direccionObligatoria">La dirección es obligatorio</string>
     <string name="apellidoObligatorio">El Apellido es obligatorio</string>
     <string name="nombreObligatorio">El Nombre es obligatorio</string>
+    <string name="image_from_url">image_from_url</string>
+
+
+    <string name="todo">TODO</string>
+
+
+
 
 </resources>
