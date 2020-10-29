@@ -34,7 +34,7 @@
                 android:layout_marginTop="0sp"
                 android:layout_marginBottom="0sp"
                 app:srcCompat="@drawable/logo"
-                android:contentDescription="@string/todo" />
+                android:contentDescription="@string/foto" />
 
 
 
@@ -282,7 +282,7 @@
                             android:layout_width="25sp"
                             android:layout_height="25sp"
                             android:layout_gravity="center"
-                            android:contentDescription="@string/todo"
+                            android:contentDescription="@string/foto"
                             app:srcCompat="@drawable/correo" />
 
                         <TextView
@@ -314,7 +314,7 @@
                             android:layout_width="25sp"
                             android:layout_height="25sp"
                             android:layout_gravity="center"
-                            android:contentDescription="@string/todo"
+                            android:contentDescription="@string/foto"
                             app:srcCompat="@drawable/telefono" />
 
                         <TextView
@@ -347,7 +347,7 @@
                             android:layout_width="25sp"
                             android:layout_height="50sp"
                             android:layout_gravity="center"
-                            android:contentDescription="@string/todo"
+                            android:contentDescription="@string/foto"
                             app:srcCompat="@drawable/telefono_fijo" />
 
                         <TextView

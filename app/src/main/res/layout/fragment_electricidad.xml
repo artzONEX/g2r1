@@ -28,7 +28,7 @@
                 android:layout_marginTop="0sp"
                 android:layout_marginBottom="0sp"
                 app:srcCompat="@drawable/logobien"
-                android:contentDescription="@string/todo" />
+                android:contentDescription="@string/foto" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -517,7 +517,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="57dp"
                                 android:fontFamily="@font/roboto_bold"
-                                android:text="otros"
+                                android:text="@string/botonElectr6"
                                 android:textColor="@color/LetraCarpinteria"
                                 android:textSize="24sp"
                                 android:id="@+id/elec6Text"/>

@@ -28,7 +28,7 @@
                 android:layout_marginTop="0sp"
                 android:layout_marginBottom="0sp"
                 app:srcCompat="@drawable/logobien"
-                android:contentDescription="@string/todo" />
+                android:contentDescription="@string/foto" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
