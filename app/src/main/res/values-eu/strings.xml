@@ -7,7 +7,8 @@
     <string name="pintura">Pintura</string>
     <string name="otros">Beste batzuk</string>
 
-    <string name="descripcion">Txapuzapp etxeko akatsak konpontzeko gure zerbitzuak erosteko aplikazio bat da</string>
+    <string name="descripcion1">Txapuzapp etxeko akatsak konpontzeko gure zerbitzuak erosteko aplikazioa da</string>
+    <string name="descripcion2">App honetan zure etxerako era guztietako apaingarriak aurkituko dituzu. Hona hemen bezeroei ematen dizkiegun zenbait zerbitzuren bideoak</string>
     <string name="phone">Telefono</string>
     <string name="telFijo">Telefono finko</string>
     <string name="telMovil">Telefono mugikor</string>
@@ -51,8 +52,6 @@
     <string name="botonOtros1">Telebista programatzea</string>
     <string name="botonOtros2">Koadroak zintzilikatu</string>
     <string name="botonOtros3">Beste bat</string>
-
-    <string name="descripcion2">Batchapp etxeko akatsak konpontzeko gure zerbitzuak erosteko aplikazioa da</string>
 
     <string name="textoGeneralOpciones">Aukeratu behar duzun ataza</string>
     <string name="enviar">BIDALI</string>
