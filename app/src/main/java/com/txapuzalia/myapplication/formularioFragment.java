@@ -2,6 +2,7 @@ package com.txapuzalia.myapplication;
 
 import android.annotation.SuppressLint;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.SystemClock;
@@ -16,6 +17,7 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -27,7 +29,9 @@ import java.util.Map;
 
 public class formularioFragment extends Fragment {
 
-
+    public CardView navigation_correo;
+    public CardView navigation_telefono;
+    public CardView navigation_movil;
     public Button btnenviar;
     public EditText editName;
     public EditText editSurName;
@@ -65,6 +69,9 @@ public class formularioFragment extends Fragment {
         editEmail = v.findViewById(R.id.editEmail);
         editPhone = v.findViewById(R.id.editPhone);
         etComments = v.findViewById(R.id.etComments);
+        navigation_correo=v.findViewById(R.id.navigation_correo);
+        navigation_movil=v.findViewById(R.id.navigation_telefonoMovil);
+        navigation_telefono=v.findViewById(R.id.navigation_telefonoFijo);
 
         tvOpcion.setText(opcion);
         editName.setOnFocusChangeListener(new View.OnFocusChangeListener() {
@@ -134,6 +141,41 @@ public class formularioFragment extends Fragment {
 
         });
 
+
+        navigation_correo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent inCorreo= new Intent(Intent.ACTION_SEND);
+                inCorreo=contactanos.FUNCION_CORREO(inCorreo);
+                startActivity(Intent.createChooser(inCorreo, "Escoja un correo"));
+
+            }
+        });
+
+        navigation_movil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent inPhone = new Intent(Intent.ACTION_DIAL);
+                String numeroMovil = getString(R.string.numeroTel);
+                inPhone=contactanos.FUNCION_MOVIL(numeroMovil, inPhone);
+                startActivity(inPhone);
+
+            }
+        });
+
+        navigation_telefono.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                String numeroFijo= getString(R.string.numeroFij);
+                intent=contactanos.FUNCION_FIJO(numeroFijo, intent);
+                startActivity(intent);
+
+            }
+        });
 
         return v;
     }
