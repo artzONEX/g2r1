@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/fondo"
+    android:background="@color/Fondo"
     >
     <ScrollView
         android:id="@+id/scrollView2"
@@ -29,7 +29,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="111dp"
                 android:contentDescription="@string/foto"
-                android:src="@drawable/logobien"
+                android:src="@drawable/logo"
                 tools:ignore="MissingConstraints"
                 tools:srcCompat="@tools:sample/avatars" />
 
@@ -37,7 +37,6 @@
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@color/texto"
                 android:layout_marginTop="50dp"
                 android:padding="0dp"
                 android:text="@string/desliza"
@@ -59,7 +58,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="209dp"
                 android:layout_marginStart="15dp"
-                android:textColor="@color/texto"
                 android:layout_marginTop="0dp"
                 android:padding="15dp"
                 android:text="@string/descripcion"
@@ -78,7 +76,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:textColor="@color/texto"
                 android:layout_marginTop="10dp"
                 android:padding="15dp"
                 android:text="@string/descripcion2"

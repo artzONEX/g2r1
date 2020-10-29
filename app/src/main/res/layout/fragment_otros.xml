@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo"
+    android:background="#F1F0F0"
     android:orientation="vertical"
 
     tools:context=".MainActivity">
@@ -50,7 +50,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/CardColor"
                     android:orientation="vertical"
                     android:padding="14dp">
 
@@ -80,7 +79,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="81dp"
-                                android:textColor="@color/texto"
                                 android:text="@string/otros1Desc"/>
 
 
@@ -126,7 +124,7 @@
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
                                 android:text="@string/seleccionar"
-                                android:textColor="@color/texto" />
+                                android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
@@ -150,7 +148,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/CardColor"
                     android:orientation="vertical"
                     android:padding="14dp">
 
@@ -180,7 +177,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:textColor="@color/texto"
                                 android:text="@string/otros2Desc" />
 
 
@@ -226,7 +222,7 @@
                                 android:fontFamily="@font/roboto_regular"
                                 android:gravity="center"
                                 android:text="@string/seleccionar"
-                                android:textColor="@color/texto" />
+                                android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
@@ -250,7 +246,6 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@color/CardColor"
                     android:orientation="vertical"
                     android:padding="14dp">
 
@@ -280,7 +275,6 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:textColor="@color/texto"
                                 android:text="@string/otros3Desc" />
 
 
@@ -325,7 +319,7 @@
                                 android:layout_marginStart="5dp"
                                 android:gravity="center"
                                 android:text="@string/seleccionar"
-                                android:textColor="@color/texto"/>
+                                android:textColor="#F06A90B5" />
 
 
                         </LinearLayout>
