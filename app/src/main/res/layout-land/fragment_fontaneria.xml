@@ -29,7 +29,7 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 app:srcCompat="@drawable/logo"
-                android:contentDescription="@string/todo" />
+                android:contentDescription="@string/foto" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
