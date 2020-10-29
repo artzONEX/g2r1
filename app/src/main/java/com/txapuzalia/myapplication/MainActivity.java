@@ -4,7 +4,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
@@ -30,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
     private TextView textViewModo;
+    @SuppressLint("UseSwitchCompatOrMaterialCode")
     public Switch switch1;
 
 
@@ -201,19 +201,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         {
             case R.id.navigation_telefonoFijo:
                 Intent inte = new Intent(Intent.ACTION_DIAL);
-                inte.setData(Uri.parse("tel:" + getString(R.string.numeroFij)));
+                inte=contactanos.FUNCION_FIJO(getString(R.string.numeroFij), inte);
                 startActivity(inte);
                 break;
             case R.id.navigation_telefonoMovil:
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:" + getString(R.string.numeroTel)));
+                intent = contactanos.FUNCION_MOVIL(getString(R.string.numeroTel), intent);
                 startActivity(intent);
                 break;
             case R.id.navigation_correo:
                 Intent in = new Intent(Intent.ACTION_SEND);
-                in.putExtra(Intent.EXTRA_EMAIL, new String[] { "txapuzalia@gmail.com" });
-                in.putExtra(Intent.EXTRA_SUBJECT, "Duda/Queja");
-                in.setType("message/rfc822");
+                in=contactanos.FUNCION_CORREO(in);
                 startActivity(Intent.createChooser(in, "Escoja un correo"));
                 break;
             case R.id.navigation_home:
