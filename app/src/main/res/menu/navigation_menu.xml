@@ -42,7 +42,7 @@
                 android:icon="@drawable/destornillador"/>
         </menu>
     </item>
-        <item android:title="@string/contacto">
+    <item android:title="@string/contacto">
             <menu>
                 <item android:id=" @+id/navigation_correo"
                     android:title="@string/email"
@@ -57,7 +57,7 @@
                 android:fontFamily="sans-serif-medium"
                 android:icon="@drawable/telefono_fijo" />
             </menu>
-        </item>
+    </item>
 
 </menu>
 

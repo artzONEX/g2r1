@@ -89,10 +89,11 @@
         android:layout_height="match_parent"
         app:menu="@menu/navigation_menu"
         android:id="@+id/navigation_informacion"
-        app:itemIconTint="@color/texto"
         android:background="@color/fondo"
         app:itemTextColor="@color/texto"
         android:layout_gravity="start"
-        app:headerLayout="@layout/nav_header_layout"/>
+        app:headerLayout="@layout/nav_header_layout"
+
+        android:theme="@style/ItemColorMenu"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

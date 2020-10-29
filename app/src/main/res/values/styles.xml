@@ -20,4 +20,10 @@
         <item name="android:background">@color/colorPrimary</item>
     </style>
 
+
+
+    <style name="ItemColorMenu">
+        <item name="android:textColorSecondary">@color/texto</item>
+    </style>
+
 </resources>
