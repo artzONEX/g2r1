@@ -95,7 +95,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1"
+                                android:src="@drawable/font1"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -195,7 +195,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1"
+                                android:src="@drawable/font2"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -297,7 +297,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1"
+                                android:src="@drawable/font3"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
@@ -397,7 +397,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_alignParentEnd="true"
                                 android:layout_marginTop="-8dp"
-                                android:src="@drawable/food1"
+                                android:src="@drawable/font4"
                                 android:contentDescription="@string/foto" />
                         </RelativeLayout>
 
