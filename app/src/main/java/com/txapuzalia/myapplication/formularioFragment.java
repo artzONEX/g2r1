@@ -126,7 +126,7 @@ public class formularioFragment extends Fragment {
                 if (editName.getText().toString().isEmpty() || editSurName.getText().toString().isEmpty() ||
                         editDireccion.getText().toString().isEmpty() || editEmail.getText().toString().isEmpty() ||
                         editPhone.getText().toString().isEmpty()) {
-                    Toast.makeText(getActivity().getApplicationContext(), "Rellene los campos obligatorios", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplicationContext(), R.string.camposVacios, Toast.LENGTH_SHORT).show();
 
                 } else {
                     if (comprobarDatos()) {
@@ -184,11 +184,11 @@ public class formularioFragment extends Fragment {
 
         String emailInput = editEmail.getText().toString().trim();
         if (!Patterns.EMAIL_ADDRESS.matcher(emailInput).matches()) {
-            Toast.makeText(getActivity().getApplicationContext(), "El correo electrónico es incorrecto.", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity().getApplicationContext(), R.string.correoMal, Toast.LENGTH_SHORT).show();
             return false;
         } else {
             if (editPhone.getText().toString().trim().length() < 9) {
-                Toast.makeText(getActivity().getApplicationContext(), "El número de teléfono es incorrecto.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity().getApplicationContext(), R.string.telefonoMal, Toast.LENGTH_SHORT).show();
                 return false;
             }
 

@@ -118,8 +118,8 @@
     <string name="image_from_url" translatable="false">image_from_url</string>
     <string name="modo" translatable="false">Modo</string>
     <string name="Mode">Modo</string>
-    <string name="modoOn">Activando Modo Oscuro/Modu iluna aktibatzen</string>
-    <string name="modoOff">Activando Modo Claro/Argi modua aktibatzen</string>
+    <string name="modoOn">Activando Modo Oscuro</string>
+    <string name="modoOff">Activando Modo Claro</string>
 
 
 
