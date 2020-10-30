@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:id="@+id/drawer_layout"
-
+    android:background="@color/fondo"
     >
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
