@@ -71,6 +71,7 @@
                 android:layout_gravity="start"
                 android:autofillHints=""
                 android:textColor="@color/texto"
+                android:digits="0123456789"
                 android:ems="10"
                 android:inputType="phone"
                 android:maxLength="9"
