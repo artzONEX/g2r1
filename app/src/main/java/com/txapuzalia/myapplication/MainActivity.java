@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                     //ModoOscuro();
 
-                    Toast.makeText(getApplicationContext(), "Activando Modo Oscuro", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.modoOn, Toast.LENGTH_SHORT).show();
 
                     SharedPreferences MiPreferences = getSharedPreferences("guardado", Context.MODE_PRIVATE);
                     String texto = "Oscuro";
@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
 
-                    Toast.makeText(getApplicationContext(), "Activando Modo Claro", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.modoOff, Toast.LENGTH_SHORT).show();
 
                     SharedPreferences MiPreferences = getSharedPreferences("guardado", Context.MODE_PRIVATE);
                     String texto = "Claro";
